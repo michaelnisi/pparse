@@ -11,6 +11,7 @@
 #import "pparse.h"
 
 @interface PodcastParserTests : XCTestCase
+@property (nonatomic) NSArray *episodes;
 - (void)pipe:(NSInputStream *)stream parser:(PodcastParser *)parser;
 @end
 
@@ -141,39 +142,46 @@
     return date;
 }
 
-
-static NSArray *Episodes = nil;
-
 - (NSArray *)episodes {
-    if (Episodes) return Episodes;
+    if (!_episodes) {
+        _episodes = @[[self episodeWithTitle:@"Shake Shake Shake Your Spices"
+                                      author:@"John Doe"
+                                    subtitle:@"A short primer on table spices"
+                                     summary:@"This week we talk about salt and pepper shakers, comparing and contrasting pour rates, construction materials, and overall aesthetics. Come and join the party!"
+                                         url:@"http://example.com/podcasts/everything/AllAboutEverythingEpisode3.m4a"
+                                        guid:@"http://example.com/podcasts/archive/aae20050615.m4a"
+                                     pubDate:[self dateWithYear:2005 month:06 day:15 hour:19]],
+                      [self episodeWithTitle:@"Socket Wrench Shootout"
+                                      author:@"Jane Doe"
+                                    subtitle:@"Comparing socket wrenches is fun!"
+                                     summary:@"This week we talk about metric vs. old english socket wrenches. Which one is better? Do you really need both? Get all of your answers here."
+                                         url:@"http://example.com/podcasts/everything/AllAboutEverythingEpisode2.mp3"
+                                        guid:@"http://example.com/podcasts/archive/aae20050608.mp3"
+                                     pubDate:[self dateWithYear:2005 month:06 day:8 hour:19]],
+                      [self episodeWithTitle:@"Red, Whine, & Blue"
+                                      author:@"Various"
+                                    subtitle:@"Red + Blue != Purple"
+                                     summary:@"This week we talk about surviving in a Red state if you are a Blue person. Or vice versa."
+                                         url:@"http://example.com/podcasts/everything/AllAboutEverythingEpisode1.mp3"
+                                        guid:@"http://example.com/podcasts/archive/aae20050601.mp3"
+                                     pubDate:[self dateWithYear:2005 month:06 day:01 hour:19]]
+                      ];
+    }
     
-    Episodes
-    = @[
-        [PodcastFeedParserEpisode episodeWithTitle:@"Shake Shake Shake Your Spices"
-                                            author:@"John Doe"
-                                          subtitle:@"A short primer on table spices"
-                                           summary:@"This week we talk about salt and pepper shakers, comparing and contrasting pour rates, construction materials, and overall aesthetics. Come and join the party!"
-                                               url:@"http://example.com/podcasts/everything/AllAboutEverythingEpisode3.m4a"
-                                              guid:@"http://example.com/podcasts/archive/aae20050615.m4a"
-                                           pubDate:[self dateWithYear:2005 month:06 day:15 hour:19]],
-        [PodcastFeedParserEpisode episodeWithTitle:@"Socket Wrench Shootout"
-                                            author:@"Jane Doe"
-                                          subtitle:@"Comparing socket wrenches is fun!"
-                                           summary:@"This week we talk about metric vs. old english socket wrenches. Which one is better? Do you really need both? Get all of your answers here."
-                                               url:@"http://example.com/podcasts/everything/AllAboutEverythingEpisode2.mp3"
-                                              guid:@"http://example.com/podcasts/archive/aae20050608.mp3"
-                                           pubDate:[self dateWithYear:2005 month:06 day:8 hour:19]],
-        [PodcastFeedParserEpisode episodeWithTitle:@"Red, Whine, & Blue"
-                                            author:@"Various"
-                                          subtitle:@"Red + Blue != Purple"
-                                           summary:@"This week we talk about surviving in a Red state if you are a Blue person. Or vice versa."
-                                               url:@"http://example.com/podcasts/everything/AllAboutEverythingEpisode1.mp3"
-                                              guid:@"http://example.com/podcasts/archive/aae20050601.mp3"
-                                           pubDate:[self dateWithYear:2005 month:06 day:01 hour:19]]
-        ];
-    
-    return Episodes;
+    return _episodes;
 }
+
+- (PodcastFeedParserEpisode *)episodeWithTitle:(NSString *)title
+                                        author:(NSString *)author
+                                      subtitle:(NSString *)subtitle
+                                       summary:(NSString *)summary
+                                           url:(NSString *)url
+                                          guid:(NSString *)guid
+                                       pubDate:(NSDate *)pubDate {
+    
+    return [PodcastFeedParserEpisode episodeWithTitle:title author:author subtitle:subtitle summary:summary url:url guid:guid pubDate:pubDate];
+}
+            
 
 - (PodcastFeedParserEpisode *)getEpisode:(NSUInteger)index {
     return [self.episodes objectAtIndex:index];
