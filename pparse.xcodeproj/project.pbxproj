@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A4AC2DB256E46829A82CA52 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE212C715BA8461993C0CF1D /* libPods.a */; };
+		4CFCC02C17A01AF1004EF689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02B17A01AF1004EF689 /* Foundation.framework */; };
+		4CFCC03117A01AF1004EF689 /* pparse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CFCC03017A01AF1004EF689 /* pparse.h */; };
+		4CFCC03A17A01AF1004EF689 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC03917A01AF1004EF689 /* XCTest.framework */; };
+		4CFCC03B17A01AF1004EF689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02B17A01AF1004EF689 /* Foundation.framework */; };
+		4CFCC03D17A01AF1004EF689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC03C17A01AF1004EF689 /* UIKit.framework */; };
+		4CFCC04017A01AF1004EF689 /* libpparse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02817A01AF1004EF689 /* libpparse.a */; };
+		4CFCC04617A01AF1004EF689 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC04417A01AF1004EF689 /* InfoPlist.strings */; };
+		4CFCC05717A02348004EF689 /* SearchResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC05517A02348004EF689 /* SearchResultParser.m */; };
+		4CFCC05D17A023D7004EF689 /* 5by5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC05817A023D7004EF689 /* 5by5.json */; };
+		4CFCC05E17A023D7004EF689 /* apple.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC05917A023D7004EF689 /* apple.xml */; };
+		4CFCC05F17A023D7004EF689 /* mobilemacs.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC05A17A023D7004EF689 /* mobilemacs.json */; };
+		4CFCC06017A023D7004EF689 /* SearchResultParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC05C17A023D7004EF689 /* SearchResultParserTests.m */; };
+		4CFCC06317A02B73004EF689 /* PodcastParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC06117A02B73004EF689 /* PodcastParser.m */; };
+		4CFCC06517A02C54004EF689 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC06417A02C54004EF689 /* libxml2.2.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		4CFCC06817A02FE1004EF689 /* PodcastParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC06617A02FE1004EF689 /* PodcastParserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CFCC03E17A01AF1004EF689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFCC02017A01AF1004EF689 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CFCC02717A01AF1004EF689;
+			remoteInfo = pparse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CFCC02617A01AF1004EF689 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4CFCC03117A01AF1004EF689 /* pparse.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4CFCC02817A01AF1004EF689 /* libpparse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpparse.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFCC02B17A01AF1004EF689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CFCC02F17A01AF1004EF689 /* pparse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pparse-Prefix.pch"; sourceTree = "<group>"; };
+		4CFCC03017A01AF1004EF689 /* pparse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pparse.h; sourceTree = "<group>"; };
+		4CFCC03817A01AF1004EF689 /* pparseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pparseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFCC03917A01AF1004EF689 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4CFCC03C17A01AF1004EF689 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4CFCC04317A01AF1004EF689 /* pparseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pparseTests-Info.plist"; sourceTree = "<group>"; };
+		4CFCC04517A01AF1004EF689 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CFCC05417A02348004EF689 /* SearchResultParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultParser.h; sourceTree = "<group>"; };
+		4CFCC05517A02348004EF689 /* SearchResultParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultParser.m; sourceTree = "<group>"; };
+		4CFCC05817A023D7004EF689 /* 5by5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5by5.json; sourceTree = "<group>"; };
+		4CFCC05917A023D7004EF689 /* apple.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = apple.xml; sourceTree = "<group>"; };
+		4CFCC05A17A023D7004EF689 /* mobilemacs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mobilemacs.json; sourceTree = "<group>"; };
+		4CFCC05C17A023D7004EF689 /* SearchResultParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultParserTests.m; sourceTree = "<group>"; };
+		4CFCC06117A02B73004EF689 /* PodcastParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastParser.m; sourceTree = "<group>"; };
+		4CFCC06217A02B73004EF689 /* PodcastParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastParser.h; sourceTree = "<group>"; };
+		4CFCC06417A02C54004EF689 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		4CFCC06617A02FE1004EF689 /* PodcastParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastParserTests.m; sourceTree = "<group>"; };
+		5FDFD2F1F46846208A1822BA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		EE212C715BA8461993C0CF1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CFCC02517A01AF1004EF689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFCC06517A02C54004EF689 /* libxml2.2.dylib in Frameworks */,
+				4CFCC02C17A01AF1004EF689 /* Foundation.framework in Frameworks */,
+				3A4AC2DB256E46829A82CA52 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CFCC03517A01AF1004EF689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFCC04017A01AF1004EF689 /* libpparse.a in Frameworks */,
+				4CFCC03A17A01AF1004EF689 /* XCTest.framework in Frameworks */,
+				4CFCC03D17A01AF1004EF689 /* UIKit.framework in Frameworks */,
+				4CFCC03B17A01AF1004EF689 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CFCC01F17A01AF1004EF689 = {
+			isa = PBXGroup;
+			children = (
+				4CFCC02D17A01AF1004EF689 /* pparse */,
+				4CFCC04117A01AF1004EF689 /* pparseTests */,
+				4CFCC02A17A01AF1004EF689 /* Frameworks */,
+				4CFCC02917A01AF1004EF689 /* Products */,
+				5FDFD2F1F46846208A1822BA /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		4CFCC02917A01AF1004EF689 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CFCC02817A01AF1004EF689 /* libpparse.a */,
+				4CFCC03817A01AF1004EF689 /* pparseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CFCC02A17A01AF1004EF689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CFCC06417A02C54004EF689 /* libxml2.2.dylib */,
+				4CFCC02B17A01AF1004EF689 /* Foundation.framework */,
+				4CFCC03917A01AF1004EF689 /* XCTest.framework */,
+				4CFCC03C17A01AF1004EF689 /* UIKit.framework */,
+				EE212C715BA8461993C0CF1D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CFCC02D17A01AF1004EF689 /* pparse */ = {
+			isa = PBXGroup;
+			children = (
+				4CFCC03017A01AF1004EF689 /* pparse.h */,
+				4CFCC05417A02348004EF689 /* SearchResultParser.h */,
+				4CFCC05517A02348004EF689 /* SearchResultParser.m */,
+				4CFCC06117A02B73004EF689 /* PodcastParser.m */,
+				4CFCC06217A02B73004EF689 /* PodcastParser.h */,
+				4CFCC02E17A01AF1004EF689 /* Supporting Files */,
+			);
+			path = pparse;
+			sourceTree = "<group>";
+		};
+		4CFCC02E17A01AF1004EF689 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CFCC02F17A01AF1004EF689 /* pparse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CFCC04117A01AF1004EF689 /* pparseTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CFCC05C17A023D7004EF689 /* SearchResultParserTests.m */,
+				4CFCC06617A02FE1004EF689 /* PodcastParserTests.m */,
+				4CFCC04217A01AF1004EF689 /* Supporting Files */,
+			);
+			path = pparseTests;
+			sourceTree = "<group>";
+		};
+		4CFCC04217A01AF1004EF689 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CFCC05817A023D7004EF689 /* 5by5.json */,
+				4CFCC05917A023D7004EF689 /* apple.xml */,
+				4CFCC05A17A023D7004EF689 /* mobilemacs.json */,
+				4CFCC04317A01AF1004EF689 /* pparseTests-Info.plist */,
+				4CFCC04417A01AF1004EF689 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CFCC02717A01AF1004EF689 /* pparse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFCC04B17A01AF1004EF689 /* Build configuration list for PBXNativeTarget "pparse" */;
+			buildPhases = (
+				D292804B530D4444800B68F4 /* Check Pods Manifest.lock */,
+				4CFCC02417A01AF1004EF689 /* Sources */,
+				4CFCC02517A01AF1004EF689 /* Frameworks */,
+				4CFCC02617A01AF1004EF689 /* CopyFiles */,
+				7BB51B868F4C49F58F216C0C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pparse;
+			productName = pparse;
+			productReference = 4CFCC02817A01AF1004EF689 /* libpparse.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4CFCC03717A01AF1004EF689 /* pparseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFCC04E17A01AF1004EF689 /* Build configuration list for PBXNativeTarget "pparseTests" */;
+			buildPhases = (
+				4CFCC03417A01AF1004EF689 /* Sources */,
+				4CFCC03517A01AF1004EF689 /* Frameworks */,
+				4CFCC03617A01AF1004EF689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CFCC03F17A01AF1004EF689 /* PBXTargetDependency */,
+			);
+			name = pparseTests;
+			productName = pparseTests;
+			productReference = 4CFCC03817A01AF1004EF689 /* pparseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CFCC02017A01AF1004EF689 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Michael Nisi";
+			};
+			buildConfigurationList = 4CFCC02317A01AF1004EF689 /* Build configuration list for PBXProject "pparse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CFCC01F17A01AF1004EF689;
+			productRefGroup = 4CFCC02917A01AF1004EF689 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CFCC02717A01AF1004EF689 /* pparse */,
+				4CFCC03717A01AF1004EF689 /* pparseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CFCC03617A01AF1004EF689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFCC05D17A023D7004EF689 /* 5by5.json in Resources */,
+				4CFCC05E17A023D7004EF689 /* apple.xml in Resources */,
+				4CFCC04617A01AF1004EF689 /* InfoPlist.strings in Resources */,
+				4CFCC05F17A023D7004EF689 /* mobilemacs.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BB51B868F4C49F58F216C0C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D292804B530D4444800B68F4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CFCC02417A01AF1004EF689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFCC05717A02348004EF689 /* SearchResultParser.m in Sources */,
+				4CFCC06317A02B73004EF689 /* PodcastParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CFCC03417A01AF1004EF689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFCC06017A023D7004EF689 /* SearchResultParserTests.m in Sources */,
+				4CFCC06817A02FE1004EF689 /* PodcastParserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CFCC03F17A01AF1004EF689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CFCC02717A01AF1004EF689 /* pparse */;
+			targetProxy = 4CFCC03E17A01AF1004EF689 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CFCC04417A01AF1004EF689 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CFCC04517A01AF1004EF689 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CFCC04917A01AF1004EF689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CFCC04A17A01AF1004EF689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CFCC04C17A01AF1004EF689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDFD2F1F46846208A1822BA /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/pparse.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pparse/pparse-Prefix.pch";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CFCC04D17A01AF1004EF689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDFD2F1F46846208A1822BA /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/pparse.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pparse/pparse-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CFCC04F17A01AF1004EF689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pparse/pparse-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "pparseTests/pparseTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4CFCC05017A01AF1004EF689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pparse/pparse-Prefix.pch";
+				INFOPLIST_FILE = "pparseTests/pparseTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CFCC02317A01AF1004EF689 /* Build configuration list for PBXProject "pparse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFCC04917A01AF1004EF689 /* Debug */,
+				4CFCC04A17A01AF1004EF689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFCC04B17A01AF1004EF689 /* Build configuration list for PBXNativeTarget "pparse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFCC04C17A01AF1004EF689 /* Debug */,
+				4CFCC04D17A01AF1004EF689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFCC04E17A01AF1004EF689 /* Build configuration list for PBXNativeTarget "pparseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFCC04F17A01AF1004EF689 /* Debug */,
+				4CFCC05017A01AF1004EF689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CFCC02017A01AF1004EF689 /* Project object */;
+}
