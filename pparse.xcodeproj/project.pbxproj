@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A4AC2DB256E46829A82CA52 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE212C715BA8461993C0CF1D /* libPods.a */; };
+		4CF4E91B17A17D2E001B32A2 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC06417A02C54004EF689 /* libxml2.2.dylib */; };
 		4CFCC02C17A01AF1004EF689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02B17A01AF1004EF689 /* Foundation.framework */; };
 		4CFCC03117A01AF1004EF689 /* pparse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CFCC03017A01AF1004EF689 /* pparse.h */; };
 		4CFCC03A17A01AF1004EF689 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC03917A01AF1004EF689 /* XCTest.framework */; };
@@ -87,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF4E91B17A17D2E001B32A2 /* libxml2.2.dylib in Frameworks */,
 				4CFCC04017A01AF1004EF689 /* libpparse.a in Frameworks */,
 				4CFCC03A17A01AF1004EF689 /* XCTest.framework in Frameworks */,
 				4CFCC03D17A01AF1004EF689 /* UIKit.framework in Frameworks */,
