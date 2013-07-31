@@ -1,8 +1,5 @@
 # pparse - parse podcasts
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/pparse/badge.png)](http://cocoadocs.org/docsets/pparse)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/pparse/badge.png)](http://cocoadocs.org/docsets/pparse)
-
 ## Usage
 
 ## Installation
