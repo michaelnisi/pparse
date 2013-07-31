@@ -273,7 +273,7 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
 
 @end
 
-#pragma mark - SAX parsing asserts
+#pragma mark - SAX parsing callbacks
 
 typedef struct {
     char * name;
@@ -332,8 +332,6 @@ static int shouldStoreCharacters (const xmlChar *localname,
                             isXMLChar(localname, PodcastFeedParserKeySummary) ||
                             isXMLChar(localname, PodcastFeedParserKeyImage)));
 }
-
-#pragma mark - SAX parsing callbacks
 
 static void startElementSAX(void *ctx, const xmlChar *localname,
                             const xmlChar *prefix,
@@ -413,46 +411,50 @@ static void	endElementSAX(void *ctx,
     
     PodcastParser *parser = PODPARSE_PODCAST_PARSER(ctx);
     
+    PodcastFeedParserEpisode *episode = parser.currentEpisode;
+    PodcastFeedParserShow *show = parser.show;
+    
     if (parser.parsingAnEpisode) {
         if (prefix == NULL) {
             if (PODPARSE_IS_EPISODE) {
                 [parser delegateEpisode];
             } else if (isXMLChar(localname, PodcastFeedParserKeyTitle)) {
-                parser.currentEpisode.title = [parser currentString];
+                episode.title = [parser currentString];
             } else if (isXMLChar(localname, PodcastFeedParserKeyGuid)) {
-                parser.currentEpisode.guid = [parser currentString];
+                episode.guid = [parser currentString];
             } else if (isXMLChar(localname, PodcastFeedParserKeyPubDate)) {
-                parser.currentEpisode.pubDate = [parser currentDate];
+                episode.pubDate = [parser currentDate];
             }
         } else if (isXMLChar(prefix, PodcastFeedParserKeyItunes)) {
             if (isXMLChar(localname, PodcastFeedParserKeyAuthor)) {
-                parser.currentEpisode.author = [parser currentString];
+                episode.author = [parser currentString];
             } else if (isXMLChar(localname, PodcastFeedParserKeySubtitle)) {
-                parser.currentEpisode.subtitle = [parser currentString];
+                episode.subtitle = [parser currentString];
             } else if (isXMLChar(localname, PodcastFeedParserKeySummary)) {
-                parser.currentEpisode.summary = [parser currentString];
+                episode.summary = [parser currentString];
             }
         }
     } else if (!parser.showHandled) {
         if (isXMLChar(localname, PodcastFeedParserKeyTitle)) {
-            parser.show.title = parser.currentString;
+            show.title = parser.currentString;
         } else if (isXMLChar(localname, PodcastFeedParserKeyLink)) {
-            parser.show.link = parser.currentString;
+            show.link = parser.currentString;
         } else if (isXMLChar(localname, PodcastFeedParserKeySubtitle)) {
-            parser.show.subtitle = parser.currentString;
+            show.subtitle = parser.currentString;
         } else if (isXMLChar(localname, PodcastFeedParserKeyAuthor)) {
-            parser.show.author = parser.currentString;
+            show.author = parser.currentString;
         } else if (isXMLChar(localname, PodcastFeedParserKeySummary)) {
-            parser.show.summary = parser.currentString;
+            show.summary = parser.currentString;
         }
         
-        if (parser.show.title &&
-            parser.show.link &&
-            parser.show.subtitle &&
-            parser.show.author &&
-            parser.show.summary &&
-            parser.show.image) {
-            //
+        if (show
+            && show.title
+            && show.link
+            && show.subtitle
+            && show.author
+            && show.summary
+            && show.image) {
+            
             [parser delegateShow];
         }
     }
@@ -512,40 +514,3 @@ static xmlSAXHandler xmlSAXHandlerStruct = {
     endElementSAX,
     NULL
 };
-
-/*
- struct _xmlSAXHandler {
- internalSubsetSAXFunc	internalSubset
- isStandaloneSAXFunc	isStandalone
- hasInternalSubsetSAXFunc	hasInternalSubset
- hasExternalSubsetSAXFunc	hasExternalSubset
- resolveEntitySAXFunc	resolveEntity
- getEntitySAXFunc	getEntity
- entityDeclSAXFunc	entityDecl
- notationDeclSAXFunc	notationDecl
- attributeDeclSAXFunc	attributeDecl
- elementDeclSAXFunc	elementDecl
- unparsedEntityDeclSAXFunc	unparsedEntityDecl
- setDocumentLocatorSAXFunc	setDocumentLocator
- startDocumentSAXFunc	startDocument
- endDocumentSAXFunc	endDocument
- startElementSAXFunc	startElement
- endElementSAXFunc	endElement
- referenceSAXFunc	reference
- charactersSAXFunc	characters
- ignorableWhitespaceSAXFunc	ignorableWhitespace
- processingInstructionSAXFunc	processingInstruction
- commentSAXFunc	comment
- warningSAXFunc	warning
- errorSAXFunc	error
- fatalErrorSAXFunc	fatalError	: unused error() get all the errors
- getParameterEntitySAXFunc	getParameterEntity
- cdataBlockSAXFunc	cdataBlock
- externalSubsetSAXFunc	externalSubset
- unsigned int	initialized	: The following fields are extensions ava
- void *	_private
- startElementNsSAX2Func	startElementNs
- endElementNsSAX2Func	endElementNs
- xmlStructuredErrorFunc	serror
- }
- */

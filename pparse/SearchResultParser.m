@@ -121,11 +121,11 @@ static yajl_callbacks callbacks;
 
 @end
 
+#pragma mark - YAJL callbacks
+
 #define PODPARSE_SEARCH_RESULT_PARSER(ctx) (__bridge SearchResultParser *)ctx
 #define PODPARSE_STRNCMP(a, b, l) !strncmp(a, (const char *)b, l)
 #define PODPARSE_STRNMAKE(v, l) [[NSString alloc] initWithBytes:v length:l encoding:NSUTF8StringEncoding];
-
-#pragma mark - YAJL callbacks
 
 static const char *resultCountKey = "resultCount";
 static const char *resultsKey = "results";
