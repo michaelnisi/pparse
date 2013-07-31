@@ -402,7 +402,12 @@
 				DSTROOT = /tmp/pparse.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pparse/pparse-Prefix.pch";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/yajl\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -416,6 +421,11 @@
 				DSTROOT = /tmp/pparse.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pparse/pparse-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/yajl\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
