@@ -114,7 +114,7 @@
     NSError *error = _consumer.parseError;
     
     XCTAssertNotNil(error, @"");
-    XCTAssertEquals(error.code, SearchResultParserInternalError, @"");
+    XCTAssertEqual(error.code, SearchResultParserInternalError, @"");
 }
 
 - (void)testPartialDelegate {
@@ -178,7 +178,7 @@
     }
     
     XCTAssertTrue([_consumer.parseError.domain isEqualToString:SearchResultParserErrorDomain], @"should be equal");
-    XCTAssertEquals(_consumer.parseError.code, code, @"should be equal");
+    XCTAssertEqual(_consumer.parseError.code, code, @"should be equal");
 }
 
 - (void)testReuse {
@@ -192,16 +192,16 @@
     
     [self pipe:streamA parser:_parser];
     XCTAssertFalse([_parser parse:nil], @"");
-    XCTAssertEquals(_consumer.resultCount, 8U, @"");
+    XCTAssertEqual(_consumer.resultCount, 8U, @"");
     
-    XCTAssertEquals([_consumer flush].count, 8U, @"");
-    XCTAssertEquals(_consumer.items.count, 0U, @"");
+    XCTAssertEqual([_consumer flush].count, 8U, @"");
+    XCTAssertEqual(_consumer.items.count, 0U, @"");
     
     NSString *b = [bundle pathForResource:@"5by5" ofType:@"json"];
     NSInputStream *streamB = [NSInputStream inputStreamWithFileAtPath:b];
     [self pipe:streamB parser:_parser];
     XCTAssertFalse([_parser parse:nil], @"");
-    XCTAssertEquals(_consumer.resultCount, 50U, @"");
+    XCTAssertEqual(_consumer.resultCount, 50U, @"");
 }
 
 - (void)testParse {

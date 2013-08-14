@@ -93,22 +93,15 @@
 }
 
 - (void)pipe:(NSInputStream *)stream parser:(PodcastParser *)parser {
-    [stream open];
-    
     NSInteger maxLength = 1 << arc4random() % 10;
     NSInteger result;
     uint8_t buffer[maxLength];
-    
-    while((result = [stream read:buffer maxLength:maxLength]) != 0) {
-        if (result > 0) {
-            [parser parse:[NSData dataWithBytesNoCopy:buffer
-                                               length:result
-                                         freeWhenDone:NO]];
-        } else {
-            break;
-        }
+    [stream open];
+    while((result = [stream read:buffer maxLength:maxLength]) > 0) {
+        [parser parse:[NSData dataWithBytesNoCopy:buffer
+                                           length:result
+                                     freeWhenDone:NO]];
     }
-    
     [stream close];
 }
 
@@ -245,7 +238,7 @@
                              , [self dateWithYear:2013 month:01 day:25 hour:19 minute:53 second:21]
                              , [self dateWithYear:2013 month:03 day:15 hour:6 minute:43 second:26]];
     
-    XCTAssertEquals(delegate.episodes.count, expectedDates.count, @"should match");
+    XCTAssertEqual(delegate.episodes.count, expectedDates.count, @"should match");
     
     [expectedDates enumerateObjectsUsingBlock:^(NSDate *expectedDate, NSUInteger i, BOOL *stop) {
         PodcastFeedParserEpisode *episode = [delegate getEpisodeAtIndex:i];
