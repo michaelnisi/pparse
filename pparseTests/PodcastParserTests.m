@@ -7,21 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
 #import "pparse.h"
-
-@interface PodcastParserTests : XCTestCase
-@property (nonatomic) NSArray *episodes;
-- (void)pipe:(NSInputStream *)stream parser:(PodcastParser *)parser;
-@end
-
-# pragma mark - PodcastParserDelegate methods are optional
-
-@interface PartialDelegate : NSObject <PodcastParserDelegate>
-@end
-
-@implementation PartialDelegate
-@end
 
 # pragma mark - PodcastConsumer
 
@@ -65,12 +51,17 @@
 }
 @end
 
+# pragma mark - PodcastParserTests
+
+@interface PodcastParserTests : XCTestCase <PodcastParserDelegate>
+@property (nonatomic) NSArray *episodes;
+- (void)pipe:(NSInputStream *)stream parser:(PodcastParser *)parser;
+@end
+
 @interface PodcastParserTests ()
 @property (nonatomic) NSDateFormatter *dateFormatter;
 @property (nonatomic) NSLocale *locale;
 @end
-
-# pragma mark - PodcastParserTests
 
 @implementation PodcastParserTests
 
@@ -196,12 +187,9 @@
     NSLog(@"took %f", time);
 }
 
-#pragma mark - SenTestCase
-
-- (void)testPartialDelegate {
-    PartialDelegate *delegate = [PartialDelegate new];
+- (void)testOptionalDelegate {
     NSDateFormatter *dateFormatter = [self dateFormatter];
-    PodcastParser *parser = [PodcastParser parserWith:delegate dateFormatter:dateFormatter];
+    PodcastParser *parser = [PodcastParser parserWith:self dateFormatter:dateFormatter];
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSString *path = [bundle pathForResource:@"apple" ofType:@"xml"];
