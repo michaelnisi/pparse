@@ -16,14 +16,9 @@
 		4CFCC03D17A01AF1004EF689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC03C17A01AF1004EF689 /* UIKit.framework */; };
 		4CFCC04017A01AF1004EF689 /* libpparse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02817A01AF1004EF689 /* libpparse.a */; };
 		4CFCC04617A01AF1004EF689 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC04417A01AF1004EF689 /* InfoPlist.strings */; };
-		4CFCC05717A02348004EF689 /* SearchResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC05517A02348004EF689 /* SearchResultParser.m */; };
-		4CFCC05D17A023D7004EF689 /* 5by5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC05817A023D7004EF689 /* 5by5.json */; };
 		4CFCC05E17A023D7004EF689 /* apple.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC05917A023D7004EF689 /* apple.xml */; };
-		4CFCC05F17A023D7004EF689 /* mobilemacs.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC05A17A023D7004EF689 /* mobilemacs.json */; };
-		4CFCC06017A023D7004EF689 /* SearchResultParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC05C17A023D7004EF689 /* SearchResultParserTests.m */; };
 		4CFCC06317A02B73004EF689 /* PodcastParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC06117A02B73004EF689 /* PodcastParser.m */; };
 		4CFCC06517A02C54004EF689 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC06417A02C54004EF689 /* libxml2.2.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
-		4CFCC06817A02FE1004EF689 /* PodcastParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC06617A02FE1004EF689 /* PodcastParserTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,16 +54,10 @@
 		4CFCC03C17A01AF1004EF689 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4CFCC04317A01AF1004EF689 /* pparseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pparseTests-Info.plist"; sourceTree = "<group>"; };
 		4CFCC04517A01AF1004EF689 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CFCC05417A02348004EF689 /* SearchResultParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultParser.h; sourceTree = "<group>"; };
-		4CFCC05517A02348004EF689 /* SearchResultParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultParser.m; sourceTree = "<group>"; };
-		4CFCC05817A023D7004EF689 /* 5by5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5by5.json; sourceTree = "<group>"; };
 		4CFCC05917A023D7004EF689 /* apple.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = apple.xml; sourceTree = "<group>"; };
-		4CFCC05A17A023D7004EF689 /* mobilemacs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mobilemacs.json; sourceTree = "<group>"; };
-		4CFCC05C17A023D7004EF689 /* SearchResultParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultParserTests.m; sourceTree = "<group>"; };
 		4CFCC06117A02B73004EF689 /* PodcastParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastParser.m; sourceTree = "<group>"; };
 		4CFCC06217A02B73004EF689 /* PodcastParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastParser.h; sourceTree = "<group>"; };
 		4CFCC06417A02C54004EF689 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
-		4CFCC06617A02FE1004EF689 /* PodcastParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastParserTests.m; sourceTree = "<group>"; };
 		5FDFD2F1F46846208A1822BA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EE212C715BA8461993C0CF1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,8 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				4CFCC03017A01AF1004EF689 /* pparse.h */,
-				4CFCC05417A02348004EF689 /* SearchResultParser.h */,
-				4CFCC05517A02348004EF689 /* SearchResultParser.m */,
 				4CFCC06117A02B73004EF689 /* PodcastParser.m */,
 				4CFCC06217A02B73004EF689 /* PodcastParser.h */,
 				4CFCC02E17A01AF1004EF689 /* Supporting Files */,
@@ -155,8 +142,6 @@
 		4CFCC04117A01AF1004EF689 /* pparseTests */ = {
 			isa = PBXGroup;
 			children = (
-				4CFCC05C17A023D7004EF689 /* SearchResultParserTests.m */,
-				4CFCC06617A02FE1004EF689 /* PodcastParserTests.m */,
 				4CFCC04217A01AF1004EF689 /* Supporting Files */,
 			);
 			path = pparseTests;
@@ -165,9 +150,7 @@
 		4CFCC04217A01AF1004EF689 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4CFCC05817A023D7004EF689 /* 5by5.json */,
 				4CFCC05917A023D7004EF689 /* apple.xml */,
-				4CFCC05A17A023D7004EF689 /* mobilemacs.json */,
 				4CFCC04317A01AF1004EF689 /* pparseTests-Info.plist */,
 				4CFCC04417A01AF1004EF689 /* InfoPlist.strings */,
 			);
@@ -246,10 +229,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFCC05D17A023D7004EF689 /* 5by5.json in Resources */,
 				4CFCC05E17A023D7004EF689 /* apple.xml in Resources */,
 				4CFCC04617A01AF1004EF689 /* InfoPlist.strings in Resources */,
-				4CFCC05F17A023D7004EF689 /* mobilemacs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFCC05717A02348004EF689 /* SearchResultParser.m in Sources */,
 				4CFCC06317A02B73004EF689 /* PodcastParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,8 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFCC06017A023D7004EF689 /* SearchResultParserTests.m in Sources */,
-				4CFCC06817A02FE1004EF689 /* PodcastParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,6 @@
 #ifndef _PPARSE_
 #define _PPARSE_
 
-#import "SearchResultParser.h"
 #import "PodcastParser.h"
 
 #endif
