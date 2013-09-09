@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		3A4AC2DB256E46829A82CA52 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE212C715BA8461993C0CF1D /* libPods.a */; };
 		4CF4E91B17A17D2E001B32A2 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC06417A02C54004EF689 /* libxml2.2.dylib */; };
+		4CFA15EE17DD8C3C00B921F3 /* PodcastParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA15ED17DD8C3C00B921F3 /* PodcastParserTests.m */; };
 		4CFCC02C17A01AF1004EF689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02B17A01AF1004EF689 /* Foundation.framework */; };
-		4CFCC03117A01AF1004EF689 /* pparse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CFCC03017A01AF1004EF689 /* pparse.h */; };
 		4CFCC03A17A01AF1004EF689 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC03917A01AF1004EF689 /* XCTest.framework */; };
 		4CFCC03B17A01AF1004EF689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02B17A01AF1004EF689 /* Foundation.framework */; };
 		4CFCC03D17A01AF1004EF689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC03C17A01AF1004EF689 /* UIKit.framework */; };
 		4CFCC04017A01AF1004EF689 /* libpparse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02817A01AF1004EF689 /* libpparse.a */; };
 		4CFCC04617A01AF1004EF689 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC04417A01AF1004EF689 /* InfoPlist.strings */; };
 		4CFCC05E17A023D7004EF689 /* apple.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCC05917A023D7004EF689 /* apple.xml */; };
-		4CFCC06317A02B73004EF689 /* PodcastParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC06117A02B73004EF689 /* PodcastParser.m */; };
+		4CFCC06317A02B73004EF689 /* MNFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCC06117A02B73004EF689 /* MNFeedParser.m */; };
 		4CFCC06517A02C54004EF689 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC06417A02C54004EF689 /* libxml2.2.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -38,25 +38,24 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				4CFCC03117A01AF1004EF689 /* pparse.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4CFA15ED17DD8C3C00B921F3 /* PodcastParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastParserTests.m; sourceTree = "<group>"; };
 		4CFCC02817A01AF1004EF689 /* libpparse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpparse.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFCC02B17A01AF1004EF689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CFCC02F17A01AF1004EF689 /* pparse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pparse-Prefix.pch"; sourceTree = "<group>"; };
-		4CFCC03017A01AF1004EF689 /* pparse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pparse.h; sourceTree = "<group>"; };
 		4CFCC03817A01AF1004EF689 /* pparseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pparseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFCC03917A01AF1004EF689 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4CFCC03C17A01AF1004EF689 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4CFCC04317A01AF1004EF689 /* pparseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pparseTests-Info.plist"; sourceTree = "<group>"; };
 		4CFCC04517A01AF1004EF689 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CFCC05917A023D7004EF689 /* apple.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = apple.xml; sourceTree = "<group>"; };
-		4CFCC06117A02B73004EF689 /* PodcastParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastParser.m; sourceTree = "<group>"; };
-		4CFCC06217A02B73004EF689 /* PodcastParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastParser.h; sourceTree = "<group>"; };
+		4CFCC06117A02B73004EF689 /* MNFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNFeedParser.m; sourceTree = "<group>"; };
+		4CFCC06217A02B73004EF689 /* MNFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNFeedParser.h; sourceTree = "<group>"; };
 		4CFCC06417A02C54004EF689 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		5FDFD2F1F46846208A1822BA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EE212C715BA8461993C0CF1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,9 +122,8 @@
 		4CFCC02D17A01AF1004EF689 /* pparse */ = {
 			isa = PBXGroup;
 			children = (
-				4CFCC03017A01AF1004EF689 /* pparse.h */,
-				4CFCC06117A02B73004EF689 /* PodcastParser.m */,
-				4CFCC06217A02B73004EF689 /* PodcastParser.h */,
+				4CFCC06117A02B73004EF689 /* MNFeedParser.m */,
+				4CFCC06217A02B73004EF689 /* MNFeedParser.h */,
 				4CFCC02E17A01AF1004EF689 /* Supporting Files */,
 			);
 			path = pparse;
@@ -142,6 +140,7 @@
 		4CFCC04117A01AF1004EF689 /* pparseTests */ = {
 			isa = PBXGroup;
 			children = (
+				4CFA15ED17DD8C3C00B921F3 /* PodcastParserTests.m */,
 				4CFCC04217A01AF1004EF689 /* Supporting Files */,
 			);
 			path = pparseTests;
@@ -274,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFCC06317A02B73004EF689 /* PodcastParser.m in Sources */,
+				4CFCC06317A02B73004EF689 /* MNFeedParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFA15EE17DD8C3C00B921F3 /* PodcastParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

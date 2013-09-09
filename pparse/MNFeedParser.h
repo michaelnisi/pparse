@@ -49,20 +49,20 @@
 
 #pragma mark - PodcastParserDelegate
 
-@class PodcastParser;
+@class MNFeedParser;
 
 @protocol PodcastParserDelegate <NSObject>
 @optional
-- (void)parserDidStart:(PodcastParser *)parser;
-- (void)parserDidEnd:(PodcastParser *)parser;
-- (void)parser:(PodcastParser *)parser foundShow:(PodcastFeedParserShow *)show;
-- (void)parser:(PodcastParser *)parser foundEpisode:(PodcastFeedParserEpisode *)episode;
-- (void)parser:(PodcastParser *)parser parseErrorOccurred:(NSError *)parseError;
+- (void)parserDidStart:(MNFeedParser *)parser;
+- (void)parserDidEnd:(MNFeedParser *)parser;
+- (void)parser:(MNFeedParser *)parser foundShow:(PodcastFeedParserShow *)show;
+- (void)parser:(MNFeedParser *)parser foundEpisode:(PodcastFeedParserEpisode *)episode;
+- (void)parser:(MNFeedParser *)parser parseErrorOccurred:(NSError *)parseError;
 @end
 
 #pragma mark - PodcastParser
 
-@interface PodcastParser : NSObject
+@interface MNFeedParser : NSObject
 @property (nonatomic, assign) id <PodcastParserDelegate> delegate;
 - (BOOL)parse:(NSData *)data;
 - (void)abortParsing;
@@ -70,7 +70,7 @@
 - (id)initWith:(id <PodcastParserDelegate>)delegate
  dateFormatter:(NSDateFormatter *)dateFormatter;
 
-+ (PodcastParser *)parserWith:(id <PodcastParserDelegate>)delegate
++ (MNFeedParser *)parserWith:(id <PodcastParserDelegate>)delegate
                 dateFormatter:(NSDateFormatter *)dateFormatter;
 
 @end

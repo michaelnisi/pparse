@@ -7,7 +7,7 @@
 //
 
 #import <libxml/tree.h>
-#import "PodcastParser.h"
+#import "MNFeedParser.h"
 
 #pragma mark - PodcastFeedParserShow
 
@@ -100,7 +100,7 @@ struct _xmlSAX2Attributes {
 };
 typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
 
-@interface PodcastParser ()
+@interface MNFeedParser ()
 @property (nonatomic) BOOL parsingAnEpisode;
 @property (nonatomic) BOOL bufferingChars;
 @property (nonatomic) BOOL showHandled;
@@ -118,7 +118,7 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
 - (void)delegateDocumentEnd;
 @end
 
-@implementation PodcastParser
+@implementation MNFeedParser
 
 - (void)dealloc {
     if (_context) {
@@ -161,9 +161,9 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
     return self;
 }
 
-+ (PodcastParser *)parserWith:(id<PodcastParserDelegate>)delegate
++ (MNFeedParser *)parserWith:(id<PodcastParserDelegate>)delegate
                 dateFormatter:(NSDateFormatter *)dateFormatter {
-    return [[PodcastParser alloc] initWith:delegate dateFormatter:dateFormatter];
+    return [[MNFeedParser alloc] initWith:delegate dateFormatter:dateFormatter];
 }
 
 - (void)setStoringCharacters:(BOOL)value {
@@ -313,7 +313,7 @@ typedef enum {
 
 #define PODPARSE_STRNCMP(a,b,l) !strncmp((const char *)a, b, l)
 #define PODPARSE_IS_EPISODE prefix == NULL && isXMLChar(localname, PodcastFeedParserKeyItem)
-#define PODPARSE_PODCAST_PARSER(ctx) (__bridge PodcastParser *)ctx
+#define PODPARSE_PODCAST_PARSER(ctx) (__bridge MNFeedParser *)ctx
 
 static int
 isXMLChar (const xmlChar *localname, PodcastFeedParserKey key) {
@@ -347,7 +347,7 @@ static void startElementSAX(void *ctx, const xmlChar *localname,
                             int nb_defaulted,
                             const xmlChar **attributes) {
     
-    PodcastParser *parser = PODPARSE_PODCAST_PARSER(ctx);
+    MNFeedParser *parser = PODPARSE_PODCAST_PARSER(ctx);
 
     if (PODPARSE_IS_EPISODE) {
         parser.currentEpisode = [PodcastFeedParserEpisode new];
@@ -416,7 +416,7 @@ static void	endElementSAX(void *ctx,
                           const xmlChar *prefix,
                           const xmlChar *URI) {
     
-    PodcastParser *parser = PODPARSE_PODCAST_PARSER(ctx);
+    MNFeedParser *parser = PODPARSE_PODCAST_PARSER(ctx);
     PodcastFeedParserEpisode *episode = parser.currentEpisode;
     PodcastFeedParserShow *show = parser.show;
     
@@ -469,7 +469,7 @@ static void	endElementSAX(void *ctx,
 }
 
 static void	charactersFoundSAX(void *ctx, const xmlChar *ch, int len) {
-    PodcastParser *parser = PODPARSE_PODCAST_PARSER(ctx);
+    MNFeedParser *parser = PODPARSE_PODCAST_PARSER(ctx);
     if (parser.bufferingChars) {
        [parser appendCharacters:(const char *)ch length:len];
     }
