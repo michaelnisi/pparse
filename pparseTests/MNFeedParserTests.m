@@ -9,20 +9,20 @@
 #import <XCTest/XCTest.h>
 #import "MNFeedParser.h"
 
-# pragma mark - PodcastConsumer
+# pragma mark - AFeedReader
 
-@interface PodcastConsumer : NSObject <PodcastParserDelegate>
-@property (nonatomic) PodcastFeedParserShow *show;
+@interface AFeedReader : NSObject <MNFeedParserDelegate>
+@property (nonatomic) MNFeed *show;
 @property (nonatomic) NSMutableArray *episodes;
 @property (nonatomic) NSError *parseError;
 @property (nonatomic) BOOL started;
 @property (nonatomic) BOOL ended;
-- (PodcastFeedParserEpisode *)getEpisodeAtIndex:(NSUInteger)index;
+- (MNFeedEntry *)getEpisodeAtIndex:(NSUInteger)index;
 @end
 
-@implementation PodcastConsumer
+@implementation AFeedReader
 
-- (void)parser:(MNFeedParser *)parser foundEpisode:(PodcastFeedParserEpisode *)episode {
+- (void)parser:(MNFeedParser *)parser foundEpisode:(MNFeedEntry *)episode {
     if (!_episodes) {
         _episodes = [NSMutableArray new];
     }
@@ -30,7 +30,7 @@
     [_episodes addObject:episode];
 }
 
-- (void)parser:(MNFeedParser *)parser foundShow:(PodcastFeedParserShow *)show {
+- (void)parser:(MNFeedParser *)parser foundShow:(MNFeed *)show {
     _show = show;
 }
 
@@ -46,14 +46,14 @@
     _ended = YES;
 }
 
-- (PodcastFeedParserEpisode *)getEpisodeAtIndex:(NSUInteger)index {
-    return (PodcastFeedParserEpisode *)[_episodes objectAtIndex:index];
+- (MNFeedEntry *)getEpisodeAtIndex:(NSUInteger)index {
+    return (MNFeedEntry *)[_episodes objectAtIndex:index];
 }
 @end
 
 # pragma mark - MNFeedParserTests
 
-@interface MNFeedParserTests : XCTestCase <PodcastParserDelegate>
+@interface MNFeedParserTests : XCTestCase <MNFeedParserDelegate>
 @property (nonatomic) NSArray *episodes;
 - (void)pipe:(NSInputStream *)stream parser:(MNFeedParser *)parser;
 @end
@@ -155,7 +155,7 @@
     return _episodes;
 }
 
-- (PodcastFeedParserEpisode *)episodeWithTitle:(NSString *)title
+- (MNFeedEntry *)episodeWithTitle:(NSString *)title
                                         author:(NSString *)author
                                       subtitle:(NSString *)subtitle
                                        summary:(NSString *)summary
@@ -163,16 +163,16 @@
                                           guid:(NSString *)guid
                                        pubDate:(NSDate *)pubDate {
     
-    return [PodcastFeedParserEpisode episodeWithTitle:title author:author subtitle:subtitle summary:summary url:url guid:guid pubDate:pubDate];
+    return [MNFeedEntry entryWithTitle:title author:author subtitle:subtitle summary:summary url:url guid:guid pubDate:pubDate];
 }
             
 
-- (PodcastFeedParserEpisode *)getEpisode:(NSUInteger)index {
+- (MNFeedEntry *)getEpisode:(NSUInteger)index {
     return [self.episodes objectAtIndex:index];
 }
 
 - (void)measureParsingTime {
-    PodcastConsumer *delegate = [PodcastConsumer new];
+    AFeedReader *delegate = [AFeedReader new];
     NSDateFormatter *dateFormatter = [self dateFormatter];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
@@ -207,7 +207,7 @@
 }
 
 - (void)testDate {
-    PodcastConsumer *delegate = [PodcastConsumer new];
+    AFeedReader *delegate = [AFeedReader new];
     NSDateFormatter *dateFormatter = [self dateFormatter];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
@@ -229,14 +229,14 @@
     XCTAssertEqual(delegate.episodes.count, expectedDates.count, @"should match");
     
     [expectedDates enumerateObjectsUsingBlock:^(NSDate *expectedDate, NSUInteger i, BOOL *stop) {
-        PodcastFeedParserEpisode *episode = [delegate getEpisodeAtIndex:i];
+        MNFeedEntry *episode = [delegate getEpisodeAtIndex:i];
         NSDate *date = episode.pubDate;
         XCTAssertTrue([date isEqualToDate:expectedDate], @"should be expected date");
     }];
 }
 
 - (void)testAppleReferenceFeed {
-    PodcastConsumer *delegate = [PodcastConsumer new];
+    AFeedReader *delegate = [AFeedReader new];
     NSDateFormatter *dateFormatter = [self dateFormatter];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
@@ -252,11 +252,11 @@
         [self getEpisode:2]
     ];
     
-    [expected enumerateObjectsUsingBlock:^(PodcastFeedParserEpisode *a, NSUInteger i, BOOL *stop) {
-        PodcastFeedParserEpisode *b = [delegate getEpisodeAtIndex:i];
+    [expected enumerateObjectsUsingBlock:^(MNFeedEntry *a, NSUInteger i, BOOL *stop) {
+        MNFeedEntry *b = [delegate getEpisodeAtIndex:i];
         XCTAssertNotNil(a, @"should not be nil");
         XCTAssertNotNil(b, @"should not be nil");
-        XCTAssertTrue([a isEqualToEpisode:b], @"should be equal episodes");
+        XCTAssertTrue([a isEqualToEntry:b], @"should be equal episodes");
     }];
     
     XCTAssertTrue(delegate.started, @"should be started");
@@ -265,7 +265,7 @@
     XCTAssertTrue(delegate.ended, @"should be ended");
     XCTAssertNil(delegate.parseError, @"should not error");
     
-    PodcastFeedParserShow *show = delegate.show;
+    MNFeed *show = delegate.show;
     
     XCTAssertNotNil(show, @"should be set");
     XCTAssertTrue([show.title isEqualToString:@"All About Everything"], @"should be equal");

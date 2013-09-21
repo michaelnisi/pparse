@@ -8,20 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-#pragma mark - PodcastFeedParserShow
+#pragma mark - MNFeed
 
-@interface PodcastFeedParserShow : NSObject
+@interface MNFeed : NSObject
+
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSString *link;
 @property (nonatomic) NSString *subtitle;
 @property (nonatomic) NSString *author;
 @property (nonatomic) NSString *summary;
 @property (nonatomic) NSString *image;
+
 @end
 
-#pragma mark - PodcastFeedParserEpisode
+#pragma mark - MNFeedEntry
 
-@interface PodcastFeedParserEpisode : NSObject
+@interface MNFeedEntry : NSObject
+
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSString *author;
 @property (nonatomic) NSString *subtitle;
@@ -29,6 +32,7 @@
 @property (nonatomic) NSString *url;
 @property (nonatomic) NSString *guid;
 @property (nonatomic) NSDate *pubDate;
+
 - (id)initWithTitle:(NSString *)title
              author:(NSString *)author
            subtitle:(NSString *)subtitle
@@ -37,40 +41,45 @@
                guid:(NSString *)guid
             pubDate:(NSDate *)pubDate;
 
-+ (PodcastFeedParserEpisode*)episodeWithTitle:(NSString *)title
-                      author:(NSString *)author
-                    subtitle:(NSString *)subtitle
-                     summary:(NSString *)summary
-                         url:(NSString *)url
-                        guid:(NSString *)guid
-                     pubDate:(NSDate *)pubDate;
-- (BOOL)isEqualToEpisode:(PodcastFeedParserEpisode *)episode;
++ (MNFeedEntry*)entryWithTitle:(NSString *)title
+                        author:(NSString *)author
+                      subtitle:(NSString *)subtitle
+                       summary:(NSString *)summary
+                           url:(NSString *)url
+                          guid:(NSString *)guid
+                       pubDate:(NSDate *)pubDate;
+
+- (BOOL)isEqualToEntry:(MNFeedEntry *)entry;
+
 @end
 
-#pragma mark - PodcastParserDelegate
+#pragma mark - MNFeedParserDelegate
 
 @class MNFeedParser;
 
-@protocol PodcastParserDelegate <NSObject>
+@protocol MNFeedParserDelegate <NSObject>
+
 @optional
 - (void)parserDidStart:(MNFeedParser *)parser;
 - (void)parserDidEnd:(MNFeedParser *)parser;
-- (void)parser:(MNFeedParser *)parser foundShow:(PodcastFeedParserShow *)show;
-- (void)parser:(MNFeedParser *)parser foundEpisode:(PodcastFeedParserEpisode *)episode;
+- (void)parser:(MNFeedParser *)parser foundShow:(MNFeed *)show;
+- (void)parser:(MNFeedParser *)parser foundEpisode:(MNFeedEntry *)episode;
 - (void)parser:(MNFeedParser *)parser parseErrorOccurred:(NSError *)parseError;
+
 @end
 
-#pragma mark - PodcastParser
+#pragma mark - MNFeedParser
 
 @interface MNFeedParser : NSObject
-@property (nonatomic, assign) id <PodcastParserDelegate> delegate;
+
+@property (nonatomic, assign) id <MNFeedParserDelegate> delegate;
+
 - (BOOL)parse:(NSData *)data;
 - (void)abortParsing;
-
-- (id)initWith:(id <PodcastParserDelegate>)delegate
+- (id)initWith:(id <MNFeedParserDelegate>)delegate
  dateFormatter:(NSDateFormatter *)dateFormatter;
 
-+ (MNFeedParser *)parserWith:(id <PodcastParserDelegate>)delegate
++ (MNFeedParser *)parserWith:(id <MNFeedParserDelegate>)delegate
                 dateFormatter:(NSDateFormatter *)dateFormatter;
 
 @end
