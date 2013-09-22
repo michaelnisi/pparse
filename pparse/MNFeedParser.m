@@ -1,5 +1,5 @@
 //
-//  Podcast.m
+//  MNFeedParser.m
 //  podparse
 //
 //  Created by Michael Nisi on 15.10.12.
@@ -32,8 +32,8 @@
             summary:(NSString *)summary
                 url:(NSString *)url
                guid:(NSString *)guid
-            pubDate:(NSDate *)pubDate
-{
+            pubDate:(NSDate *)pubDate {
+    
     self = [super init];
     
     if (self) {
@@ -422,6 +422,52 @@ updateFeed(const xmlChar *localname,
     }
 }
 
+static void
+episodeAttributes(const xmlChar *localname,
+                  const xmlChar *prefix,
+                  int nb_attributes,
+                  const xmlChar **attributes,
+                  MNFeedParser *parser) {
+    
+    int prefixed = prefix == NULL;
+    
+    if (prefixed) {
+        if (isXMLChar(localname, PodcastFeedParserKeyEnclosure)) {
+            __block MNFeedEntry *episode = parser.episode;
+            parseAttributes(attributes,
+                            nb_attributes,
+                            ^(const xmlChar *name, NSString *value) {
+                                if (isXMLChar(name, PodcastFeedParserKeyUrl)) {
+                                    episode.url = value;
+                                }
+                            });
+        }
+    }
+}
+
+static void
+feedAttributes(const xmlChar *localname,
+               const xmlChar *prefix,
+               int nb_attributes,
+               const xmlChar **attributes,
+               MNFeedParser *parser) {
+    
+    int prefixed = prefix == NULL;
+    
+    if (!prefixed) {
+        if (isXMLChar(localname, PodcastFeedParserKeyImage)) {
+            __block MNFeed *feed = parser.feed;
+            parseAttributes(attributes,
+                            nb_attributes,
+                            ^(const xmlChar *name, NSString *value) {
+                                if (isXMLChar(name, PodcastFeedParserKeyHref)) {
+                                    feed.image = value;
+                                }
+                            });
+        }
+    }
+}
+
 #pragma mark - SAX callbacks
 
 static void
@@ -446,36 +492,10 @@ startElementSAX(void *ctx,
         parser.bufferingChars = YES;
     }
     
-    int prefixed = prefix == NULL;
-    
     if (parser.parsingEpisode) {
-        if (prefixed) {
-            if (isXMLChar(localname, PodcastFeedParserKeyEnclosure)) {
-                __block MNFeedEntry *episode = parser.episode;
-                parseAttributes(attributes,
-                                nb_attributes,
-                                ^(const xmlChar *name, NSString *value) {
-                                    
-                    if (isXMLChar(name, PodcastFeedParserKeyUrl)) {
-                        episode.url = value;
-                    }
-                });
-            }
-        }
+        episodeAttributes(localname, prefix, nb_attributes, attributes, parser);
     } else {
-        if (!prefixed) {
-            if (isXMLChar(localname, PodcastFeedParserKeyImage)) {
-                __block MNFeed *feed = parser.feed;
-                parseAttributes(attributes,
-                                nb_attributes,
-                                ^(const xmlChar *name, NSString *value) {
-                                    
-                    if (isXMLChar(name, PodcastFeedParserKeyHref)) {
-                        feed.image = value;
-                    }
-                });
-            }
-        }
+        feedAttributes(localname, prefix, nb_attributes, attributes, parser);
     }
 }
 
