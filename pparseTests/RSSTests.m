@@ -11,7 +11,6 @@
 #import "FeedParserTestDelegate.h"
 
 @interface RSSTests : XCTestCase
-
 @end
 
 @implementation RSSTests
@@ -29,7 +28,7 @@
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:nil];
     
     NSString *a = @"<rss><channel>";
-    NSString *b = @"<title>The Talk Show With John Gruber</title>";
+    NSString *b = @"<title>Logbuch:Netzpolitik</title>";
     NSString *c = @"</channel></rss>";
     
     NSString *xml = [NSString stringWithFormat:@"%@%@%@", a, b, c];
@@ -43,7 +42,28 @@
     XCTAssertTrue(delegate.ended);
     
     MNFeed *feed = delegate.show;
-    NSString *title = @"The Talk Show With John Gruber";
+    NSString *title = @"Logbuch:Netzpolitik";
+    XCTAssertTrue([feed.title isEqualToString:title]);
+}
+
+- (void)testStream {
+    FeedParserTestDelegate *delegate = [FeedParserTestDelegate new];
+    NSDateFormatter *dateFormatter = nil;
+    MNFeedParser *parser = [MNFeedParser parserWith:delegate
+                                      dateFormatter:dateFormatter];
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [bundle pathForResource:@"rss2" ofType:@"xml"];
+    NSInputStream *stream = [NSInputStream inputStreamWithFileAtPath:path];
+    
+    [parser parseStream:stream withMaxLength:1 << arc4random() % 10];
+    
+    XCTAssertTrue(delegate.started);
+    XCTAssertNil(delegate.parseError);
+    XCTAssertTrue(delegate.ended);
+    
+    MNFeed *feed = delegate.show;
+    NSString *title = @"Liftoff News";
     XCTAssertTrue([feed.title isEqualToString:title]);
 }
 
