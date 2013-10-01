@@ -1,5 +1,5 @@
 //
-//  MNFeedParserTests.m
+//  ITunesTests.m
 //  podparse
 //
 //  Created by Michael Nisi on 1/12/13.
@@ -8,18 +8,18 @@
 
 #import <XCTest/XCTest.h>
 #import "MNFeedParser.h"
-#import "AFeedReader.h"
+#import "FeedParserTestDelegate.h"
 
-@interface MNFeedParserTests : XCTestCase <MNFeedParserDelegate>
+@interface ITunesTests : XCTestCase <MNFeedParserDelegate>
 @property (nonatomic) NSArray *episodes;
 @end
 
-@interface MNFeedParserTests ()
+@interface ITunesTests ()
 @property (nonatomic) NSDateFormatter *dateFormatter;
 @property (nonatomic) NSLocale *locale;
 @end
 
-@implementation MNFeedParserTests
+@implementation ITunesTests
 
 - (NSDateFormatter *)dateFormatter {
     if (!_dateFormatter) {
@@ -106,7 +106,15 @@
                                           guid:(NSString *)guid
                                        pubDate:(NSDate *)pubDate {
     
-    return [MNFeedEntry entryWithTitle:title author:author subtitle:subtitle summary:summary url:url guid:guid pubDate:pubDate];
+    MNFeedEntry *entry = [MNFeedEntry new];
+    entry.title = title;
+    entry.author = author;
+    entry.subtitle = subtitle;
+    entry.summary = summary;
+    entry.url = url;
+    entry.guid = guid;
+    entry.pubDate = pubDate;
+    return entry;
 }
             
 
@@ -115,7 +123,7 @@
 }
 
 - (void)measureParsingTime {
-    AFeedReader *delegate = [AFeedReader new];
+    FeedParserTestDelegate *delegate = [FeedParserTestDelegate new];
     NSDateFormatter *dateFormatter = [self dateFormatter];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
@@ -150,7 +158,7 @@
 }
 
 - (void)testDate {
-    AFeedReader *delegate = [AFeedReader new];
+    FeedParserTestDelegate *delegate = [FeedParserTestDelegate new];
     NSDateFormatter *dateFormatter = [self dateFormatter];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
@@ -179,7 +187,7 @@
 }
 
 - (void)testAppleReferenceFeed {
-    AFeedReader *delegate = [AFeedReader new];
+    FeedParserTestDelegate *delegate = [FeedParserTestDelegate new];
     NSDateFormatter *dateFormatter = [self dateFormatter];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
@@ -199,7 +207,9 @@
         MNFeedEntry *b = [delegate entryAtIndex:i];
         XCTAssertNotNil(a, @"should not be nil");
         XCTAssertNotNil(b, @"should not be nil");
-        XCTAssertTrue([a isEqualToEntry:b], @"should be equal episodes");
+        XCTAssertTrue([a.title isEqualToString:b.title]);
+        XCTAssertTrue([a.subtitle isEqualToString:b.subtitle]);
+        XCTAssertTrue([a.summary isEqualToString:b.summary]);
     }];
     
     XCTAssertTrue(delegate.started, @"should be started");

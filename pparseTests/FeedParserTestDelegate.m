@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Michael Nisi. All rights reserved.
 //
 
-#import "AFeedReader.h"
+#import "FeedParserTestDelegate.h"
 
-@implementation AFeedReader
+@implementation FeedParserTestDelegate
 
 - (void)parser:(MNFeedParser *)parser foundEpisode:(MNFeedEntry *)episode {
     if (!_episodes) {

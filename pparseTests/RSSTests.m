@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "MNFeedParser.h"
-#import "AFeedReader.h"
+#import "FeedParserTestDelegate.h"
 
 @interface RSSTests : XCTestCase
 
@@ -25,7 +25,7 @@
 }
 
 - (void)testFeedTitle {
-    AFeedReader *delegate = [AFeedReader new];
+    FeedParserTestDelegate *delegate = [FeedParserTestDelegate new];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:nil];
     
     NSString *a = @"<rss><channel>";

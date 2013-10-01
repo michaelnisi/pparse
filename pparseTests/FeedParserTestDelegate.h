@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MNFeedParser.h"
 
-@interface AFeedReader : NSObject <MNFeedParserDelegate>
+@interface FeedParserTestDelegate : NSObject <MNFeedParserDelegate>
 
 @property (nonatomic) MNFeed *show;
 @property (nonatomic) NSMutableArray *episodes;

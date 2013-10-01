@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "MNFeedParser.h"
-#import "AFeedReader.h"
+#import "FeedParserTestDelegate.h"
 
 @interface AtomTests : XCTestCase
 
@@ -25,7 +25,7 @@
 }
 
 - (void)testFeedTitle {
-    AFeedReader *delegate = [AFeedReader new];
+    FeedParserTestDelegate *delegate = [FeedParserTestDelegate new];
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:nil];
     
     NSString *a = @"<feed>";
@@ -48,7 +48,7 @@
 }
 
 - (void)testStream {
-    AFeedReader *delegate = [AFeedReader new];
+    FeedParserTestDelegate *delegate = [FeedParserTestDelegate new];
     NSDateFormatter *dateFormatter = nil;
     MNFeedParser *parser = [MNFeedParser parserWith:delegate
                                       dateFormatter:dateFormatter];
@@ -65,7 +65,7 @@
     
     MNFeed *feed = delegate.show;
     NSString *title = @"Example Feed";
-    //XCTAssertTrue([feed.title isEqualToString:title]);
+    XCTAssertTrue([feed.title isEqualToString:title]);
 }
 
 @end

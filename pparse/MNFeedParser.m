@@ -9,65 +9,6 @@
 #import <libxml/tree.h>
 #import "MNFeedParser.h"
 
-#pragma mark - MNFeed
-
-@implementation MNFeed
-@end
-
-#pragma mark - MNFeedEntry
-
-@implementation MNFeedEntry
-
-- (BOOL)isEqualToEntry:(MNFeedEntry *)entry {
-    BOOL title = [self.title isEqualToString:entry.title];
-    BOOL subtitle = [self.subtitle isEqualToString:entry.subtitle];
-    BOOL summary = [self.summary isEqualToString:entry.summary];
-    
-    return title && subtitle && summary;
-}
-
-- (id)initWithTitle:(NSString *)title
-             author:(NSString *)author
-           subtitle:(NSString *)subtitle
-            summary:(NSString *)summary
-                url:(NSString *)url
-               guid:(NSString *)guid
-            pubDate:(NSDate *)pubDate {
-    
-    self = [super init];
-    
-    if (self) {
-        _title = title;
-        _author = author;
-        _subtitle = subtitle;
-        _summary = summary;
-        _url = url;
-        _guid = guid;
-        _pubDate = pubDate;
-    }
-    
-    return self;
-}
-
-+ (MNFeedEntry *)entryWithTitle:(NSString *)title
-                         author:(NSString *)author
-                       subtitle:(NSString *)subtitle
-                        summary:(NSString *)summary
-                            url:(NSString *)url
-                           guid:(NSString *)guid
-                        pubDate:(NSDate *)pubDate {
-    
-    return [[MNFeedEntry alloc] initWithTitle:title
-                                       author:author
-                                     subtitle:subtitle
-                                      summary:summary
-                                          url:url
-                                         guid:guid
-                                      pubDate:pubDate];
-}
-
-@end
-
 #pragma mark - SAX callbacks (forward declaration)
 
 static void startElementSAX(void *ctx,
@@ -574,3 +515,11 @@ static xmlSAXHandler xmlSAXHandlerStruct = {
     endElementSAX,
     NULL
 };
+
+#pragma mark - etc.
+
+@implementation MNFeed
+@end
+
+@implementation MNFeedEntry
+@end

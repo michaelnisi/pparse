@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		4C95BC6C17FA9A4F0094A756 /* mix.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4C95BC6B17FA9A4F0094A756 /* mix.xml */; };
 		4C95BC6E17FA9ABE0094A756 /* AtomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95BC6D17FA9ABE0094A756 /* AtomTests.m */; };
-		4C95BC7117FA9B500094A756 /* AFeedReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95BC7017FA9B500094A756 /* AFeedReader.m */; };
+		4C95BC7117FA9B500094A756 /* FeedParserTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95BC7017FA9B500094A756 /* FeedParserTestDelegate.m */; };
 		4C95BC7317FAB2BD0094A756 /* RSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95BC7217FAB2BD0094A756 /* RSSTests.m */; };
 		4C95BC7517FAD59C0094A756 /* atom.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4C95BC7417FAD59C0094A756 /* atom.xml */; };
 		4C95BC7717FAD5B50094A756 /* rss2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4C95BC7617FAD5B50094A756 /* rss2.xml */; };
 		4CF4E91B17A17D2E001B32A2 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC06417A02C54004EF689 /* libxml2.2.dylib */; };
-		4CFA15EE17DD8C3C00B921F3 /* MNFeedParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA15ED17DD8C3C00B921F3 /* MNFeedParserTests.m */; };
+		4CFA15EE17DD8C3C00B921F3 /* ITunesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA15ED17DD8C3C00B921F3 /* ITunesTests.m */; };
 		4CFCC02C17A01AF1004EF689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02B17A01AF1004EF689 /* Foundation.framework */; };
 		4CFCC03A17A01AF1004EF689 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC03917A01AF1004EF689 /* XCTest.framework */; };
 		4CFCC03B17A01AF1004EF689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCC02B17A01AF1004EF689 /* Foundation.framework */; };
@@ -51,12 +51,12 @@
 /* Begin PBXFileReference section */
 		4C95BC6B17FA9A4F0094A756 /* mix.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mix.xml; sourceTree = "<group>"; };
 		4C95BC6D17FA9ABE0094A756 /* AtomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtomTests.m; path = pparsetests/AtomTests.m; sourceTree = SOURCE_ROOT; };
-		4C95BC6F17FA9B500094A756 /* AFeedReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFeedReader.h; path = pparsetests/AFeedReader.h; sourceTree = SOURCE_ROOT; };
-		4C95BC7017FA9B500094A756 /* AFeedReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFeedReader.m; path = pparsetests/AFeedReader.m; sourceTree = SOURCE_ROOT; };
+		4C95BC6F17FA9B500094A756 /* FeedParserTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedParserTestDelegate.h; path = pparsetests/FeedParserTestDelegate.h; sourceTree = SOURCE_ROOT; };
+		4C95BC7017FA9B500094A756 /* FeedParserTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedParserTestDelegate.m; path = pparsetests/FeedParserTestDelegate.m; sourceTree = SOURCE_ROOT; };
 		4C95BC7217FAB2BD0094A756 /* RSSTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSTests.m; path = pparsetests/RSSTests.m; sourceTree = SOURCE_ROOT; };
 		4C95BC7417FAD59C0094A756 /* atom.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = atom.xml; path = pparsetests/atom.xml; sourceTree = SOURCE_ROOT; };
 		4C95BC7617FAD5B50094A756 /* rss2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rss2.xml; sourceTree = "<group>"; };
-		4CFA15ED17DD8C3C00B921F3 /* MNFeedParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNFeedParserTests.m; sourceTree = "<group>"; };
+		4CFA15ED17DD8C3C00B921F3 /* ITunesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesTests.m; sourceTree = "<group>"; };
 		4CFCC02817A01AF1004EF689 /* libpparse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpparse.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFCC02B17A01AF1004EF689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CFCC02F17A01AF1004EF689 /* pparse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pparse-Prefix.pch"; sourceTree = "<group>"; };
@@ -151,9 +151,9 @@
 			children = (
 				4C95BC7217FAB2BD0094A756 /* RSSTests.m */,
 				4C95BC6D17FA9ABE0094A756 /* AtomTests.m */,
-				4CFA15ED17DD8C3C00B921F3 /* MNFeedParserTests.m */,
-				4C95BC6F17FA9B500094A756 /* AFeedReader.h */,
-				4C95BC7017FA9B500094A756 /* AFeedReader.m */,
+				4CFA15ED17DD8C3C00B921F3 /* ITunesTests.m */,
+				4C95BC6F17FA9B500094A756 /* FeedParserTestDelegate.h */,
+				4C95BC7017FA9B500094A756 /* FeedParserTestDelegate.m */,
 				4CFCC04217A01AF1004EF689 /* Supporting Files */,
 			);
 			path = pparseTests;
@@ -267,8 +267,8 @@
 			files = (
 				4C95BC7317FAB2BD0094A756 /* RSSTests.m in Sources */,
 				4C95BC6E17FA9ABE0094A756 /* AtomTests.m in Sources */,
-				4CFA15EE17DD8C3C00B921F3 /* MNFeedParserTests.m in Sources */,
-				4C95BC7117FA9B500094A756 /* AFeedReader.m in Sources */,
+				4CFA15EE17DD8C3C00B921F3 /* ITunesTests.m in Sources */,
+				4C95BC7117FA9B500094A756 /* FeedParserTestDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

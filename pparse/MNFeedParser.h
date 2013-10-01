@@ -34,24 +34,6 @@
 @property (nonatomic) NSString *guid;
 @property (nonatomic) NSDate *pubDate;
 
-- (id)initWithTitle:(NSString *)title
-             author:(NSString *)author
-           subtitle:(NSString *)subtitle
-            summary:(NSString *)summary
-                url:(NSString *)url
-               guid:(NSString *)guid
-            pubDate:(NSDate *)pubDate;
-
-+ (MNFeedEntry*)entryWithTitle:(NSString *)title
-                        author:(NSString *)author
-                      subtitle:(NSString *)subtitle
-                       summary:(NSString *)summary
-                           url:(NSString *)url
-                          guid:(NSString *)guid
-                       pubDate:(NSDate *)pubDate;
-
-- (BOOL)isEqualToEntry:(MNFeedEntry *)entry;
-
 @end
 
 #pragma mark - MNFeedParserDelegate
