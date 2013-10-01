@@ -1,6 +1,6 @@
 //
 //  MNFeedParser.m
-//  podparse
+//  pparse
 //
 //  Created by Michael Nisi on 15.10.12.
 //  Copyright (c) 2012 Michael Nisi. All rights reserved.
@@ -9,27 +9,7 @@
 #import <libxml/tree.h>
 #import "MNFeedParser.h"
 
-#pragma mark - SAX callbacks (forward declaration)
-
-static void startElementSAX(void *ctx,
-                            const xmlChar *localname,
-                            const xmlChar *prefix,
-                            const xmlChar *URI,
-                            int nb_namespaces,
-                            const xmlChar **namespaces,
-                            int nb_attributes,
-                            int nb_defaulted,
-                            const xmlChar **attributes);
-
-static void	endElementSAX(void *ctx,
-                          const xmlChar *localname,
-                          const xmlChar *prefix,
-                          const xmlChar *URI);
-
-static void	charactersFoundSAX(void * ctx, const xmlChar * ch, int len);
-static void errorEncounteredSAX(void * ctx, const char * msg, ...);
-static void startDocumentSAX(void * ctx);
-static void endDocumentSAX(void * ctx);
+#pragma mark - SAX (forward declarations)
 
 static xmlSAXHandler xmlSAXHandlerStruct;
 
@@ -42,13 +22,32 @@ struct _xmlSAX2Attributes {
 };
 typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
 
+static void startElementSAX (void *ctx,
+                             const xmlChar *localname,
+                             const xmlChar *prefix,
+                             const xmlChar *URI,
+                             int nb_namespaces,
+                             const xmlChar **namespaces,
+                             int nb_attributes,
+                             int nb_defaulted,
+                             const xmlChar **attributes);
+
+static void	endElementSAX (void *ctx,
+                           const xmlChar *localname,
+                           const xmlChar *prefix,
+                           const xmlChar *URI);
+
+static void	charactersFoundSAX (void * ctx, const xmlChar * ch, int len);
+static void errorEncounteredSAX (void * ctx, const char * msg, ...);
+static void startDocumentSAX (void * ctx);
+static void endDocumentSAX (void * ctx);
+
 #pragma mark - MNFeedParser
 
 @interface MNFeedParser ()
 
 @property (nonatomic) BOOL parsingEpisode;
 @property (nonatomic) BOOL bufferingChars;
-@property (nonatomic) BOOL feedHandled;
 @property (nonatomic) BOOL aborted;
 @property (nonatomic, retain) NSMutableData *characterBuffer;
 @property (nonatomic) MNFeedEntry *episode;
@@ -56,12 +55,6 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
 @property (nonatomic) xmlParserCtxtPtr context;
 @property (nonatomic) int count;
 @property (nonatomic) NSDateFormatter *dateFormatter;
-
-- (void)delegateError:(const char *)msg;
-- (void)delegateEpisode;
-- (void)delegateShow;
-- (void)delegateDocumentStart;
-- (void)delegateDocumentEnd;
 
 @end
 
@@ -92,7 +85,6 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
                                            0,
                                            NULL);
     }
-    
     return self;
 }
 
@@ -160,9 +152,8 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
                                                     length:sizeof(msg)
                                                   encoding:NSASCIIStringEncoding];
     
-    NSDictionary *errorDictionary = @{
-                                      NSLocalizedDescriptionKey : description
-                                      };
+    NSDictionary *errorDictionary
+    = @{ NSLocalizedDescriptionKey: description };
     
     NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain
                                          code:NSXMLParserInternalError
@@ -172,23 +163,18 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
 }
 
 - (void)delegateEpisode {
-    if (![_delegate respondsToSelector:@selector(parser: foundEpisode:)]) {
-        return;
+    if ([_delegate respondsToSelector:@selector(parser: foundEpisode:)]) {
+        [_delegate parser:self foundEpisode:_episode];
     }
-    
-    [_delegate parser:self foundEpisode:_episode];
     _parsingEpisode = NO;
     _episode = nil;
     _count++;
 }
 
 - (void)delegateShow {
-    if (![_delegate respondsToSelector:@selector(parser: foundShow:)]) {
-        return;
+    if ([_delegate respondsToSelector:@selector(parser: foundShow:)]) {
+        [_delegate parser:self foundShow:_feed];
     }
-    
-    [_delegate parser:self foundShow:_feed];
-    _feedHandled = YES;
     _feed = nil;
 }
 
@@ -245,7 +231,8 @@ static struct {
     { "image", 6 },
     { "pubDate", 8 },
     { "channel", 8 },
-    { "feed", 5 }
+    { "feed", 5 },
+    { "entry", 6 }
 };
 
 typedef enum {
@@ -263,13 +250,21 @@ typedef enum {
     PodcastFeedParserKeyImage,
     PodcastFeedParserKeyPubDate,
     PodcastFeedParserKeyChannel,
-    PodcastFeedParserKeyFeed
+    PodcastFeedParserKeyFeed,
+    PodcastFeedParserKeyEntry
 } PodcastFeedParserKey;
 
-#define PODPARSE_STRNCMP(a,b,l) !strncmp((const char *)a, b, l)
-#define PODPARSE_IS_ENTRY prefix == NULL && isXMLChar(localname, PodcastFeedParserKeyItem)
-#define PODPARSE_IS_FEED prefix == NULL && isXMLChar(localname, PodcastFeedParserKeyChannel) || isXMLChar(localname, PodcastFeedParserKeyFeed)
 #define PODPARSE_PODCAST_PARSER(ctx) (__bridge MNFeedParser *)ctx
+
+#define PODPARSE_STRNCMP(a,b,l) !strncmp((const char *)a, b, l)
+
+#define PODPARSE_IS_ENTRY prefix == NULL && \
+isXMLChar(localname, PodcastFeedParserKeyItem) || \
+isXMLChar(localname, PodcastFeedParserKeyEntry)
+
+#define PODPARSE_IS_FEED prefix == NULL && \
+isXMLChar(localname, PodcastFeedParserKeyChannel) || \
+isXMLChar(localname, PodcastFeedParserKeyFeed)
 
 static int
 isXMLChar (const xmlChar *localname, PodcastFeedParserKey key) {

@@ -1,5 +1,5 @@
 //
-//  AFeedReader.h
+//  FeedParserTestDelegate.h
 //  pparse
 //
 //  Created by Michael Nisi on 01.10.13.

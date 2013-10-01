@@ -1,5 +1,5 @@
 //
-//  AFeedReader.m
+//  FeedParserTestDelegate.m
 //  pparse
 //
 //  Created by Michael Nisi on 01.10.13.
@@ -11,10 +11,7 @@
 @implementation FeedParserTestDelegate
 
 - (void)parser:(MNFeedParser *)parser foundEpisode:(MNFeedEntry *)episode {
-    if (!_episodes) {
-        _episodes = [NSMutableArray new];
-    }
-    
+    if (!_episodes) _episodes = [NSMutableArray new];
     [_episodes addObject:episode];
 }
 
