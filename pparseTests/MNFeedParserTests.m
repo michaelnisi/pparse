@@ -8,54 +8,10 @@
 
 #import <XCTest/XCTest.h>
 #import "MNFeedParser.h"
-
-# pragma mark - AFeedReader
-
-@interface AFeedReader : NSObject <MNFeedParserDelegate>
-@property (nonatomic) MNFeed *show;
-@property (nonatomic) NSMutableArray *episodes;
-@property (nonatomic) NSError *parseError;
-@property (nonatomic) BOOL started;
-@property (nonatomic) BOOL ended;
-- (MNFeedEntry *)getEpisodeAtIndex:(NSUInteger)index;
-@end
-
-@implementation AFeedReader
-
-- (void)parser:(MNFeedParser *)parser foundEpisode:(MNFeedEntry *)episode {
-    if (!_episodes) {
-        _episodes = [NSMutableArray new];
-    }
-    
-    [_episodes addObject:episode];
-}
-
-- (void)parser:(MNFeedParser *)parser foundShow:(MNFeed *)show {
-    _show = show;
-}
-
-- (void)parser:(MNFeedParser *)parser parseErrorOccurred:(NSError *)parseError {
-    _parseError = parseError;
-}
-
-- (void)parserDidStart:(MNFeedParser *)parser {
-    _started = YES;
-}
-
-- (void)parserDidEnd:(MNFeedParser *)parser {
-    _ended = YES;
-}
-
-- (MNFeedEntry *)getEpisodeAtIndex:(NSUInteger)index {
-    return (MNFeedEntry *)[_episodes objectAtIndex:index];
-}
-@end
-
-# pragma mark - MNFeedParserTests
+#import "AFeedReader.h"
 
 @interface MNFeedParserTests : XCTestCase <MNFeedParserDelegate>
 @property (nonatomic) NSArray *episodes;
-- (void)pipe:(NSInputStream *)stream parser:(MNFeedParser *)parser;
 @end
 
 @interface MNFeedParserTests ()
@@ -81,19 +37,6 @@
     }
     
     return _locale;
-}
-
-- (void)pipe:(NSInputStream *)stream parser:(MNFeedParser *)parser {
-    NSInteger maxLength = 1 << arc4random() % 10;
-    NSInteger result;
-    uint8_t buffer[maxLength];
-    [stream open];
-    while((result = [stream read:buffer maxLength:maxLength]) > 0) {
-        [parser parse:[NSData dataWithBytesNoCopy:buffer
-                                           length:result
-                                     freeWhenDone:NO]];
-    }
-    [stream close];
 }
 
 - (NSDate *)dateWithYear:(NSInteger)year
@@ -177,7 +120,7 @@
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSString *path = [bundle pathForResource:@"apple" ofType:@"xml"];
+    NSString *path = [bundle pathForResource:@"itunes" ofType:@"xml"];
     NSData *data = [NSData dataWithContentsOfFile:path];
     
     NSDate *start = [NSDate date];
@@ -192,11 +135,11 @@
     MNFeedParser *parser = [MNFeedParser parserWith:self dateFormatter:dateFormatter];
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSString *path = [bundle pathForResource:@"apple" ofType:@"xml"];
+    NSString *path = [bundle pathForResource:@"itunes" ofType:@"xml"];
     NSInputStream *stream = [NSInputStream inputStreamWithFileAtPath:path];
     
     @try {
-        [self pipe:stream parser:parser];
+        [parser parseStream:stream withMaxLength:1 << arc4random() % 10];
     }
     @catch (NSException *exception) {
         XCTAssertTrue(NO, @"should not throw");
@@ -229,7 +172,7 @@
     XCTAssertEqual(delegate.episodes.count, expectedDates.count, @"should match");
     
     [expectedDates enumerateObjectsUsingBlock:^(NSDate *expectedDate, NSUInteger i, BOOL *stop) {
-        MNFeedEntry *episode = [delegate getEpisodeAtIndex:i];
+        MNFeedEntry *episode = [delegate entryAtIndex:i];
         NSDate *date = episode.pubDate;
         XCTAssertTrue([date isEqualToDate:expectedDate], @"should be expected date");
     }];
@@ -241,10 +184,10 @@
     MNFeedParser *parser = [MNFeedParser parserWith:delegate dateFormatter:dateFormatter];
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSString *path = [bundle pathForResource:@"apple" ofType:@"xml"];
+    NSString *path = [bundle pathForResource:@"itunes" ofType:@"xml"];
     NSInputStream *stream = [NSInputStream inputStreamWithFileAtPath:path];
 
-    [self pipe:stream parser:parser];
+    [parser parseStream:stream withMaxLength:1 << arc4random() % 10];
 
     NSArray *expected = @[
         [self getEpisode:0],
@@ -253,7 +196,7 @@
     ];
     
     [expected enumerateObjectsUsingBlock:^(MNFeedEntry *a, NSUInteger i, BOOL *stop) {
-        MNFeedEntry *b = [delegate getEpisodeAtIndex:i];
+        MNFeedEntry *b = [delegate entryAtIndex:i];
         XCTAssertNotNil(a, @"should not be nil");
         XCTAssertNotNil(b, @"should not be nil");
         XCTAssertTrue([a isEqualToEntry:b], @"should be equal episodes");

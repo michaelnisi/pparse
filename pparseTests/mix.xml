@@ -1,0 +1,1852 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~files/feed-premium.xsl"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+    <channel><atom:link rel="via" href="http://feeds.muleradio.net/thetalkshow"/>
+    <atom:link href="http://feeds.muleradio.net/thetalkshow" rel="self" type="application/rss+xml"/>
+        
+        <title>The Talk Show With John Gruber</title>
+        
+        <link>http://muleradio.net/thetalkshow</link>
+        <description>Sort of like the director's commentary track for Daring Fireball.</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <language>en</language>
+        <pubDate>Sat, 28 Sep 2013 11:38:00 -0700</pubDate>
+        <lastBuildDate>Sat, 28 Sep 2013 11:38:00 -0700</lastBuildDate>
+        <itunes:author>Mule Radio Syndicate</itunes:author>
+        <itunes:summary>Sort of like the director's commentary track for Daring Fireball.</itunes:summary>
+        <itunes:keywords>john gruber, daring fireball, apple, mac, iphone, ipad, tech</itunes:keywords>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:image href="http://www.muleradio.net/images/shows/thetalkshow/itunes-1400.jpg"/>
+        <itunes:owner>
+            <itunes:name> John Gruber </itunes:name>
+            <itunes:email>thetalkshow@muleradio.net</itunes:email>
+        </itunes:owner>
+        <itunes:block>no</itunes:block>
+        
+            
+            <itunes:category text="Technology">
+            
+        
+            
+                <itunes:category text=" Tech News"/>
+            </itunes:category>
+            
+        
+        
+        
+        <item>
+            <title>55: Black to the Mac</title>
+            <link>http://muleradio.net/thetalkshow/55/</link>
+            <description>Special guest John Moltz joins John Gruber. Topics include Martha Stewart, patent trolls, Touch ID and the iPhone 5S, making booze in prison, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest John Moltz joins John Gruber. Topics include Martha Stewart, patent trolls, Touch ID and the iPhone 5S, making booze in prison, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/55/">http://muleradio.net/thetalkshow/55/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.macbartender.com/thetalkshow">Bartender</a>: The app to organize your OSX menu bar items, hide them, rearrange them and a lot more.</p>
+                
+                <p><a href="http://filetransporter.com/talk">Transporter</a>: Peer-to-Peer Storage Solution like Dropbox, except you remain in complete control.</p>
+                
+                <p><a href="http://mailroute.net/thetalkshow">Mailroute</a>:
+Innovative cloud email protection. 
+We match Postini and Forefront pricing.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Sat, 28 Sep 2013 11:38:00 -0700</pubDate>
+            
+            <enclosure url="http://tracking.feedpress.it/link/1068/2845/112917700-thetalkshow-55-1.mp3" length="52427848" type="audio/mpeg"/>
+
+            
+
+            <guid>http://muleradio.net/thetalkshow/55</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber. Topics include Martha Stewart, patent trolls, Touch ID and the iPhone 5S, making booze in prison, and more.</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber. Topics include Martha Stewart, patent trolls, Touch ID and the iPhone 5S, making booze in prison, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>54: Green iPhone 5C Hidden In A Beard</title>
+            <link>http://muleradio.net/thetalkshow/54/</link>
+            <description>Special guest Jim Dalrymple joins John Gruber to talk about the new iPhones 5S and 5C on the cusp of their release, as well as iOS 7.</description>
+            <content:encoded><![CDATA[<p>Special guest <a href="http://www.loopinsight.com/">Jim Dalrymple</a> joins John Gruber to talk about the new iPhones 5S and 5C on the cusp of their release, as well as iOS 7.</p>
+                <p><a href="http://muleradio.net/thetalkshow/54/">http://muleradio.net/thetalkshow/54/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://aneventapart.com/talkshow">An Event Apart</a>: The design conference for people who make websites.</p>
+                
+                <p><a href="http://www.globaldelight.com/voila/?utm_source=DF-podcast-0913&amp;utm_medium=DF-website-txt-0913&amp;utm_campaign=DF+Podcast">Voila</a>: Your perfect screen recording companion. Creating a tutorial has never been this easy.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Thu, 19 Sep 2013 15:27:54 -0700</pubDate>
+            
+            <enclosure url="http://tracking.feedpress.it/link/1068/2551/111283945-thetalkshow-54-1.mp3" length="62183851" type="audio/mpeg"/>
+
+            
+
+            <guid>http://muleradio.net/thetalkshow/54</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Jim Dalrymple joins John Gruber to talk about the new iPhones 5S and 5C on the cusp of their release, as well as iOS 7.</itunes:subtitle>
+            <itunes:summary>Special guest Jim Dalrymple joins John Gruber to talk about the new iPhones 5S and 5C on the cusp of their release, as well as iOS 7.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>53: If They Had Asked Us</title>
+            <link>http://muleradio.net/thetalkshow/53/</link>
+            <description>Special guests Brent Simmons and Dave Wiskus join John Gruber for a discussion of last week's Apple announcements and news -- the iPhones 5S and 5C and iOS 7.</description>
+            <content:encoded><![CDATA[<p>Special guests Brent Simmons and Dave Wiskus join John Gruber for a discussion of last week's Apple announcements and news -- the iPhones 5S and 5C and iOS 7.</p>
+                <p><a href="http://muleradio.net/thetalkshow/53/">http://muleradio.net/thetalkshow/53/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://aneventapart.com/talkshow">An Event Apart</a>: The design conference for people who make websites.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&utm_medium=post&utm_campaign=podcast">Tonx</a>: The best fresh roasted coffee right to your door.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Sat, 14 Sep 2013 13:54:56 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/2366/talkshow-53.mp3" length="44028958" type="audio/mpeg"/>
+            <itunes:duration>1:31:38</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/53</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guests Brent Simmons and Dave Wiskus join John Gruber for a discussion of last week's Apple announcements and news -- the iPhones 5S and 5C and iOS 7.</itunes:subtitle>
+            <itunes:summary>Special guests Brent Simmons and Dave Wiskus join John Gruber for a discussion of last week's Apple announcements and news -- the iPhones 5S and 5C and iOS 7.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>52: A Little Bit Of Dancing On Their Grave</title>
+            <link>http://muleradio.net/thetalkshow/52/</link>
+            <description>Special guest John Siracusa joins John Gruber to talk about Microsoft and Nintendo.</description>
+            <content:encoded><![CDATA[<p>Special guest John Siracusa joins John Gruber to talk about Microsoft and Nintendo.</p>
+                <p><a href="http://muleradio.net/thetalkshow/52/">http://muleradio.net/thetalkshow/52/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.backblaze.com/daringfireball">Backblaze Online Backup</a>: $5/month. Unlimited. Unthrottled. Uncomplicated. Available Anywhere. </p>
+                
+                <p><a href="http://filetransporter.com/talk">Transporter</a>: Peer-to-Peer Storage Solution like Dropbox, except you remain in complete control.</p>
+                
+                <p><a href="http://www.igloosoftware.com/thetalkshow">Igloo</a>: An intranet you'll actually like.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Tue, 3 Sep 2013 14:28:02 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/2221/talkshow-52.mp3" length="68671832" type="audio/mpeg"/>
+            <itunes:duration>2:22:59</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/52</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Siracusa joins John Gruber to talk about Microsoft and Nintendo.</itunes:subtitle>
+            <itunes:summary>Special guest John Siracusa joins John Gruber to talk about Microsoft and Nintendo.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>51: Amazon First Citywide Change Bank</title>
+            <link>http://muleradio.net/thetalkshow/51/</link>
+            <description>Special guest MG Siegler joins John Gruber for a discussion about Amazon, Jeff Bezos, and what Apple might have planned for this fall.</description>
+            <content:encoded><![CDATA[<p>Special guest MG Siegler joins John Gruber for a discussion about Amazon, Jeff Bezos, and what Apple might have planned for this fall.</p>
+                <p><a href="http://muleradio.net/thetalkshow/51/">http://muleradio.net/thetalkshow/51/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://batchgeo.com">BatchGeo</a>: Mapping should be this easy.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                <p><a href="http://talkshow.ting.com/">Ting</a> is a no-BS mobile service that makes sense.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Thu, 15 Aug 2013 11:01:48 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/1590/talkshow-51.mp3" length="45791909" type="audio/mpeg"/>
+            <itunes:duration>1:35:18</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/51</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest MG Siegler joins John Gruber for a discussion about Amazon, Jeff Bezos, and what Apple might have planned for this fall.</itunes:subtitle>
+            <itunes:summary>Special guest MG Siegler joins John Gruber for a discussion about Amazon, Jeff Bezos, and what Apple might have planned for this fall.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>50: Gold-Plated USB Cables</title>
+            <link>http://muleradio.net/thetalkshow/50/</link>
+            <description>Special guest Marco Arment joins John Gruber; topics include Jeff Bezos's purchase of The Washington Post, working environments for programmers and web workers, how one person's "disruption" is another's "predatory pricing", in-app game purchases as the modern equivalent of coin-up arcade games, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest Marco Arment joins John Gruber; topics include Jeff Bezos's purchase of The Washington Post, working environments for programmers and web workers, how one person's "disruption" is another's "predatory pricing", in-app game purchases as the modern equivalent of coin-up arcade games, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/50/">http://muleradio.net/thetalkshow/50/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://aneventapart.com/talkshow">An Event Apart</a>: The design conference for people who make websites.</p>
+                
+                <p>Dynamically style your native mobile apps with CSS. <a href="http://pixate.com">Pixate</a> is free.</p>
+                
+                <p><a href="http://talkshow.ting.com/">Ting</a> is a no-BS mobile service that makes sense.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Wed, 7 Aug 2013 11:09:32 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/1481/talkshow-50.mp3" length="49835874" type="audio/mpeg"/>
+            <itunes:duration>1:43:44</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/50</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Marco Arment joins John Gruber; topics include Jeff Bezos's purchase of The Washington Post, working environments for programmers and web workers, how one person's "disruption" is another's "predatory ...</itunes:subtitle>
+            <itunes:summary>Special guest Marco Arment joins John Gruber; topics include Jeff Bezos's purchase of The Washington Post, working environments for programmers and web workers, how one person's "disruption" is another's "predatory pricing", in-app game purchases as the modern equivalent of coin-up arcade games, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>49: Mountains of Garbage</title>
+            <link>http://muleradio.net/thetalkshow/49/</link>
+            <description>Special guest star Dan Frommer joins John Gruber to discuss the future of television, their experiences as iOS app developers, App Store strategies, and crazy top-level domains.</description>
+            <content:encoded><![CDATA[<p>Special guest star Dan Frommer joins John Gruber to discuss the future of television, their experiences as iOS app developers, App Store strategies, and crazy top-level domains.</p>
+                <p><a href="http://muleradio.net/thetalkshow/49/">http://muleradio.net/thetalkshow/49/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Order your <a href="http://23andme.com/thetalkshow">23andMe</a> DNA kit today for just $99</p>
+                
+                <p><a href="http://mailroute.net/thetalkshow">Mailroute</a>:
+Innovative cloud email protection. 
+We match Postini and Forefront pricing.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Tue, 23 Jul 2013 12:31:50 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/1333/talkshow-49.mp3" length="31807831" type="audio/mpeg"/>
+            <itunes:duration>1:06:10</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/49</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest star Dan Frommer joins John Gruber to discuss the future of television, their experiences as iOS app developers, App Store strategies, and crazy top-level domains.</itunes:subtitle>
+            <itunes:summary>Special guest star Dan Frommer joins John Gruber to discuss the future of television, their experiences as iOS app developers, App Store strategies, and crazy top-level domains.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>48: Eddy Cue Is Going to Jail</title>
+            <link>http://muleradio.net/thetalkshow/48/</link>
+            <description>Special guest John Moltz joins John Gruber to discuss the Yankees, Apple's recent e-book price-fixing trial, Apple's role in your browsing habits, and being a nervous flyer.</description>
+            <content:encoded><![CDATA[<p>Special guest John Moltz joins John Gruber to discuss the Yankees, Apple's recent e-book price-fixing trial, Apple's role in your browsing habits, and being a nervous flyer.</p>
+                <p><a href="http://muleradio.net/thetalkshow/48/">http://muleradio.net/thetalkshow/48/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.domesticbeast.com/?utm_source=mule&amp;utm_medium=podcast&amp;utm_campaign=tts">Domestic Beast</a>: Just because you own a dog doesn’t mean your home should look like a doghouse.</p>
+                
+                <p><a href="http://tablo.io/thetalkshow">Tablo</a>: Create beautiful eBooks in the cloud and publish to Amazon &amp; Apple with a single click.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 12 Jul 2013 18:08:32 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/1179/talkshow-48.mp3" length="34702825" type="audio/mpeg"/>
+            <itunes:duration>1:12:12</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/48</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber to discuss the Yankees, Apple's recent e-book price-fixing trial, Apple's role in your browsing habits, and being a nervous flyer.</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber to discuss the Yankees, Apple's recent e-book price-fixing trial, Apple's role in your browsing habits, and being a nervous flyer.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>47: Extreme Minimal Guns</title>
+            <link>http://muleradio.net/thetalkshow/47/</link>
+            <description>Designer Christa Mrgan joins John Gruber for a discussion on iOS 7, typography, App Camp for Girls, and more.</description>
+            <content:encoded><![CDATA[<p>Designer <a href="https://twitter.com/antichrista">Christa Mrgan</a> joins John Gruber for a discussion on iOS 7, typography, App Camp for Girls, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/47/">http://muleradio.net/thetalkshow/47/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://aneventapart.com/talkshow">An Event Apart</a>: The design conference for people who make websites.</p>
+                
+                <p><a href="http://www.silverwiz.com">MoneyWiz</a>: Premium personal finance app for your Mac, iPhone and iPad. With automatic sync.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 8 Jul 2013 13:25:47 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/1157/talkshow-47.mp3" length="32695785" type="audio/mpeg"/>
+            <itunes:duration>1:08:01</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/47</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Designer Christa Mrgan joins John Gruber for a discussion on iOS 7, typography, App Camp for Girls, and more.</itunes:subtitle>
+            <itunes:summary>Designer Christa Mrgan joins John Gruber for a discussion on iOS 7, typography, App Camp for Girls, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>46: Close Encounters of the Seventh Kind</title>
+            <link>http://muleradio.net/thetalkshow/46/</link>
+            <description>Special guest Craig Hockenberry joins John Gruber for a discussion on the design changes in iOS 7, and the similarity to graphic design and color palette trends in decades past. Also: tagging as the future of inter-application file sharing.</description>
+            <content:encoded><![CDATA[<p>Special guest Craig Hockenberry joins John Gruber for a discussion on the design changes in iOS 7, and the similarity to graphic design and color palette trends in decades past. Also: tagging as the future of inter-application file sharing.</p>
+                <p><a href="http://muleradio.net/thetalkshow/46/">http://muleradio.net/thetalkshow/46/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://filetransporter.com/talk">Transporter</a>: Peer-to-Peer Storage Solution like Dropbox, except you remain in complete control.</p>
+                
+                <p><a href="http://www.igloosoftware.com/thetalkshow">Igloo</a>: An intranet you'll actually like.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 28 Jun 2013 18:46:57 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/452/talkshow-46.mp3" length="46687805" type="audio/mpeg"/>
+            <itunes:duration>1:37:10</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/46</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Craig Hockenberry joins John Gruber for a discussion on the design changes in iOS 7, and the similarity to graphic design and color palette trends in decades past. ...</itunes:subtitle>
+            <itunes:summary>Special guest Craig Hockenberry joins John Gruber for a discussion on the design changes in iOS 7, and the similarity to graphic design and color palette trends in decades past. Also: tagging as the future of inter-application file sharing.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>45: I Missed OK</title>
+            <link>http://muleradio.net/thetalkshow/45/</link>
+            <description>Special guest Adam Lisagor joins John Gruber for a considered discussion on the design changes in iOS 7.</description>
+            <content:encoded><![CDATA[<p>Special guest Adam Lisagor joins John Gruber for a considered discussion on the design changes in iOS 7.</p>
+                <p><a href="http://muleradio.net/thetalkshow/45/">http://muleradio.net/thetalkshow/45/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.fractureme.com/?utm_source=muleradio&amp;utm_medium=sponsor&amp;utm_campaign=talkshow062113">Fracture</a>: We print your photos in vivid color, directly on glass. It's photo, frame and mount, all in one.</p>
+                
+                <p><a href="http://instabrowser.co/talkshow">Instabrowser</a> for iPhone - A fast browser that turns any webpage into a mobile webpage.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 21 Jun 2013 16:09:05 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/453/talkshow-45b.mp3" length="45137176" type="audio/mpeg"/>
+            <itunes:duration>1:33:56</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/45</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Adam Lisagor joins John Gruber for a considered discussion on the design changes in iOS 7.</itunes:subtitle>
+            <itunes:summary>Special guest Adam Lisagor joins John Gruber for a considered discussion on the design changes in iOS 7.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>44: Code 47: Live From WWDC 2013</title>
+            <link>http://muleradio.net/thetalkshow/44/</link>
+            <description>Recorded in front of a live audience in San Francisco, John Gruber is joined by Guy English, Scott Simpson, and a cavalcade of very special surprise guests.</description>
+            <content:encoded><![CDATA[<p>Recorded in front of a live audience in San Francisco, John Gruber is joined by Guy English, Scott Simpson, and a cavalcade of very special surprise guests.</p>
+                <p><a href="http://muleradio.net/thetalkshow/44/">http://muleradio.net/thetalkshow/44/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://giveabrief.com/">Briefs</a>: Demo your ideas on the iPhone and iPad, without code.</p>
+                
+                <p><a href="http://minicorestudios.com/games/tumblewords">Tumblewords</a>: A beautiful and addictive word game for your iOS device.</p>
+                
+                <p><a href="http://www.windowsazure.com/en-us/develop/mobile/ios/?WT.mc_id=mirluna1">Windows Azure Mobile Services</a> makes it fast and easy to build connected mobile apps that scale.  Try for free. </p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Thu, 13 Jun 2013 16:07:29 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/454/talkshow-44.mp3" length="40339841" type="audio/mpeg"/>
+            <itunes:duration>1:23:57</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/44</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>yes</itunes:explicit>
+            <itunes:subtitle>Recorded in front of a live audience in San Francisco, John Gruber is joined by Guy English, Scott Simpson, and a cavalcade of very special surprise guests.</itunes:subtitle>
+            <itunes:summary>Recorded in front of a live audience in San Francisco, John Gruber is joined by Guy English, Scott Simpson, and a cavalcade of very special surprise guests.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>43: All The Leaks Are Wrong</title>
+            <link>http://muleradio.net/thetalkshow/43/</link>
+            <description>Special guest John Moltz joins John Gruber for some pre-WWDC speculation. Will there be new Macs? Might Apple release an SDK and App Store for Apple TV, and if so, would it require a new remote control? All that and more, including this week's allegations that the NSA is spying on US citizens' cell phone usage and Internet data.</description>
+            <content:encoded><![CDATA[<p>Special guest John Moltz joins John Gruber for some pre-WWDC speculation. Will there be new Macs? Might Apple release an SDK and App Store for Apple TV, and if so, would it require a new remote control? All that and more, including this week's allegations that the NSA is spying on US citizens' cell phone usage and Internet data.</p>
+                <p><a href="http://muleradio.net/thetalkshow/43/">http://muleradio.net/thetalkshow/43/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://aneventapart.com/talkshow">An Event Apart</a>: The design conference for people who make websites.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 7 Jun 2013 17:53:26 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/455/talkshow-43.mp3" length="36882900" type="audio/mpeg"/>
+            <itunes:duration>1:16:44</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/43</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber for some pre-WWDC speculation. Will there be new Macs? Might Apple release an SDK and App Store for Apple TV, and if so, ...</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber for some pre-WWDC speculation. Will there be new Macs? Might Apple release an SDK and App Store for Apple TV, and if so, would it require a new remote control? All that and more, including this week's allegations that the NSA is spying on US citizens' cell phone usage and Internet data.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>42: No One Has A Higher Horse</title>
+            <link>http://muleradio.net/thetalkshow/42/</link>
+            <description>Special guest Daniel Jalkut joins John Gruber for this week's show. Topics include his work at Red Sweater Software and his new blog and podcast, Bitsplitting; why there's not an iPhone version of MarsEdit; why Mac developers might want to rethink their stance toward iOS development; and more.</description>
+            <content:encoded><![CDATA[<p>Special guest Daniel Jalkut joins John Gruber for this week's show. Topics include his work at Red Sweater Software and his new blog and podcast, Bitsplitting; why there's not an iPhone version of MarsEdit; why Mac developers might want to rethink their stance toward iOS development; and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/42/">http://muleradio.net/thetalkshow/42/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.igloosoftware.com/thetalkshow">Igloo</a>: An intranet you'll actually like.</p>
+                
+                <p><a href="http://pocketinformant.com/muleradio">Informant</a> provides a unique blend of simple interface with powerful features.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 31 May 2013 16:28:15 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/456/talkshow-42.mp3" length="46239962" type="audio/mpeg"/>
+            <itunes:duration>1:36:14</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/42</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Daniel Jalkut joins John Gruber for this week's show. Topics include his work at Red Sweater Software and his new blog and podcast, Bitsplitting; why there's not an ...</itunes:subtitle>
+            <itunes:summary>Special guest Daniel Jalkut joins John Gruber for this week's show. Topics include his work at Red Sweater Software and his new blog and podcast, Bitsplitting; why there's not an iPhone version of MarsEdit; why Mac developers might want to rethink their stance toward iOS development; and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>41: See You on Larry's Island</title>
+            <link>http://muleradio.net/thetalkshow/41/</link>
+            <description>Very special guest Merlin Mann joins John Gruber to discuss 43-year-old Yankees pitcher Mariano Rivera, career-ending injuries for writers and podcasters, and whether Larry Page more resembles a Bond villain or Magneto. In other words, the usual.</description>
+            <content:encoded><![CDATA[<p>Very special guest Merlin Mann joins John Gruber to discuss 43-year-old Yankees pitcher Mariano Rivera, career-ending injuries for writers and podcasters, and whether Larry Page more resembles a Bond villain or Magneto. In other words, the usual.</p>
+                <p><a href="http://muleradio.net/thetalkshow/41/">http://muleradio.net/thetalkshow/41/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://mailroute.net/thetalkshow">Mailroute</a>:
+Innovative cloud email protection. 
+We match Postini and Forefront pricing.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 20 May 2013 15:02:48 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/457/talkshow-41.mp3" length="38815961" type="audio/mpeg"/>
+            <itunes:duration>1:20:46</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/41</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Very special guest Merlin Mann joins John Gruber to discuss 43-year-old Yankees pitcher Mariano Rivera, career-ending injuries for writers and podcasters, and whether Larry Page more resembles a Bond villain ...</itunes:subtitle>
+            <itunes:summary>Very special guest Merlin Mann joins John Gruber to discuss 43-year-old Yankees pitcher Mariano Rivera, career-ending injuries for writers and podcasters, and whether Larry Page more resembles a Bond villain or Magneto. In other words, the usual.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>40: A Look At Mail In Cyberdog</title>
+            <link>http://muleradio.net/thetalkshow/40/</link>
+            <description>Special guest Dan Frommer joins John Gruber, with topics including Windows 8's "have it all" design leading to it failing both as a tablet and PC OS; the loyalty of new Apple customers; Netflix's commanding and growing lead as a provider of streaming video; and some utterly un-researched speculation about overseas roaming leading to poor iPhone battery life.</description>
+            <content:encoded><![CDATA[<p>Special guest Dan Frommer joins John Gruber, with topics including Windows 8's "have it all" design leading to it failing both as a tablet <em>and</em> PC OS; the loyalty of new Apple customers; Netflix's commanding and growing lead as a provider of streaming video; and some utterly un-researched speculation about overseas roaming leading to poor iPhone battery life.</p>
+                <p><a href="http://muleradio.net/thetalkshow/40/">http://muleradio.net/thetalkshow/40/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://filetransporter.com/talk">Transporter</a>: Peer-to-Peer Storage Solution like Dropbox, except you remain in complete control.</p>
+                
+                <p><a href="http://mailroute.net/thetalkshow">Mailroute</a>:
+Innovative cloud email protection. 
+We match Postini and Forefront pricing.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 13 May 2013 16:34:31 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/458/talkshow-40.mp3" length="34603769" type="audio/mpeg"/>
+            <itunes:duration>1:12:00</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/40</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Dan Frommer joins John Gruber, with topics including Windows 8's "have it all" design leading to it failing both as a tablet and PC OS; the loyalty of ...</itunes:subtitle>
+            <itunes:summary>Special guest Dan Frommer joins John Gruber, with topics including Windows 8's "have it all" design leading to it failing both as a tablet and PC OS; the loyalty of new Apple customers; Netflix's commanding and growing lead as a provider of streaming video; and some utterly un-researched speculation about overseas roaming leading to poor iPhone battery life.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>39: iOS 7 Deforestation</title>
+            <link>http://muleradio.net/thetalkshow/39/</link>
+            <description>Special guest Marco Arment joins John Gruber to discuss reports of iOS 7's new system-wide appearance and where Apple might be heading stylistically; Microsoft's scrapping of the "Hotmail" brand and their generally inscrutable branding as a company; Google and personal privacy, particularly as it relates to Google Glass and Google Now's location tracking.</description>
+            <content:encoded><![CDATA[<p>Special guest Marco Arment joins John Gruber to discuss reports of iOS 7's new system-wide appearance and where Apple might be heading stylistically; Microsoft's scrapping of the "Hotmail" brand and their generally inscrutable branding as a company; Google and personal privacy, particularly as it relates to Google Glass and Google Now's location tracking.</p>
+                <p><a href="http://muleradio.net/thetalkshow/39/">http://muleradio.net/thetalkshow/39/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://backblaze.com/daringfireball">Backblaze Online Backup</a>: $5/month. Unlimited. Unthrottled. Uncomplicated.</p>
+                
+                <p><a href="http://filetransporter.com/talk">Transporter</a>: Peer-to-Peer Storage Solution like Dropbox, except you remain in complete control.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 3 May 2013 19:09:37 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/459/talkshow-39b.mp3" length="52308938" type="audio/mpeg"/>
+            <itunes:duration>1:48:53</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/39</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Marco Arment joins John Gruber to discuss reports of iOS 7's new system-wide appearance and where Apple might be heading stylistically; Microsoft's scrapping of the "Hotmail" brand and ...</itunes:subtitle>
+            <itunes:summary>Special guest Marco Arment joins John Gruber to discuss reports of iOS 7's new system-wide appearance and where Apple might be heading stylistically; Microsoft's scrapping of the "Hotmail" brand and their generally inscrutable branding as a company; Google and personal privacy, particularly as it relates to Google Glass and Google Now's location tracking.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>38: Up To The Creepy Line</title>
+            <link>http://muleradio.net/thetalkshow/38/</link>
+            <description>Special guest John Moltz joins John Gruber for a discussion on Apple's quarterly results, the asinine idea that Tim Cook's job is possibly in jeopardy, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest John Moltz joins John Gruber for a discussion on Apple's quarterly results, the asinine idea that Tim Cook's job is possibly in jeopardy, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/38/">http://muleradio.net/thetalkshow/38/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.igloosoftware.com/thetalkshow">Igloo</a>: An intranet you'll actually like.</p>
+                
+                <p><a href="http://www.windowsazure.com/en-us/develop/mobile/ios/?WT.mc_id=mirluna1">Windows Azure Mobile Services</a> makes it fast and easy to build connected mobile apps that scale.  Try for free. </p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 29 Apr 2013 11:59:59 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/460/talkshow-38b.mp3" length="44939900" type="audio/mpeg"/>
+            <itunes:duration>1:33:32</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/38</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber for a discussion on Apple's quarterly results, the asinine idea that Tim Cook's job is possibly in jeopardy, and more.</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber for a discussion on Apple's quarterly results, the asinine idea that Tim Cook's job is possibly in jeopardy, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>37: Live from Úll 2013</title>
+            <link>http://muleradio.net/thetalkshow/37/</link>
+            <description>Recorded in front of a live audience at the Úll conference in Dublin, Ireland, Michael Lopp joins John Gruber. Topics include: Ron Johnson’s stint as CEO at JC Penney, Apple’s lack of new products so far this year, and the design of tech conferences.</description>
+            <content:encoded><![CDATA[<p>Recorded in front of a live audience at the Úll conference in Dublin, Ireland, Michael Lopp joins John Gruber. Topics include: Ron Johnson’s stint as CEO at JC Penney, Apple’s lack of new products so far this year, and the design of tech conferences.</p>
+                <p><a href="http://muleradio.net/thetalkshow/37/">http://muleradio.net/thetalkshow/37/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://panic.com/thetalkshow">Status Board from Panic.</a> Beautiful data for everybody.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Tue, 16 Apr 2013 11:55:37 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/461/talkshow-37.mp3" length="24351856" type="audio/mpeg"/>
+            <itunes:duration>50:38</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/37</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Recorded in front of a live audience at the Úll conference in Dublin, Ireland, Michael Lopp joins John Gruber. Topics include: Ron Johnson’s stint as CEO at JC Penney, Apple’s ...</itunes:subtitle>
+            <itunes:summary>Recorded in front of a live audience at the Úll conference in Dublin, Ireland, Michael Lopp joins John Gruber. Topics include: Ron Johnson’s stint as CEO at JC Penney, Apple’s lack of new products so far this year, and the design of tech conferences.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>36: Stockpiling the Nuclear Weapons of Design War</title>
+            <link>http://muleradio.net/thetalkshow/36/</link>
+            <description>Special guest Om Malik joins John Gruber for a discussion about Facebook Home, and the potential for Facebook to eventually make their own mobile OS, Andy Rubin's ouster as leader of Android, Apple's challenges with iCloud, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest Om Malik joins John Gruber for a discussion about Facebook Home, and the potential for Facebook to eventually make their own mobile OS, Andy Rubin's ouster as leader of Android, Apple's challenges with iCloud, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/36/">http://muleradio.net/thetalkshow/36/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Visit <a href="http://www.audiblepodcast.com/thetalkshow">Audible.com</a> for a free, 30 day trial and choose from 100,000+ audiobooks.</p>
+                
+                <p><a href="http://manytricks.com/getnamemangler">Name Mangler</a> is an easy-to-use batch file renamer that can rename thousands of files in seconds.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 8 Apr 2013 15:26:50 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/462/talkshow-36.mp3" length="39876742" type="audio/mpeg"/>
+            <itunes:duration>1:22:59</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/36</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Om Malik joins John Gruber for a discussion about Facebook Home, and the potential for Facebook to eventually make their own mobile OS, Andy Rubin's ouster as leader ...</itunes:subtitle>
+            <itunes:summary>Special guest Om Malik joins John Gruber for a discussion about Facebook Home, and the potential for Facebook to eventually make their own mobile OS, Andy Rubin's ouster as leader of Android, Apple's challenges with iCloud, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>35: Bozos and BlackBerrys</title>
+            <link>http://muleradio.net/thetalkshow/35/</link>
+            <description>Special guest Erica Ogg, senior writer and Apple beat reporter for GigaOM, joins John Gruber to discuss Apple’s hiring of Adobe CTO Kevin Lynch, Apple’s PR department, the BBC running a story on a survey conducted by a subsidiary of Samsung’s advertising agency, Eric Schmidt still using a BlackBerry, Google Keep, and Apple’s significantly updated Podcasts app.</description>
+            <content:encoded><![CDATA[<p>Special guest Erica Ogg, senior writer and Apple beat reporter for GigaOM, joins John Gruber to discuss Apple’s hiring of Adobe CTO Kevin Lynch, Apple’s PR department, the BBC running a story on a survey conducted by a subsidiary of Samsung’s advertising agency, Eric Schmidt still using a BlackBerry, Google Keep, and Apple’s significantly updated Podcasts app.</p>
+                <p><a href="http://muleradio.net/thetalkshow/35/">http://muleradio.net/thetalkshow/35/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Say hello to <a href="https://itunes.apple.com/us/app/basil-smart-recipe-book-for/id506590870?ls=1&amp;mt=8">Basil for iPad</a>, the smartest cookbook you'll ever meet.</p>
+                
+                <p><a href="http://www.ridiculousfishing.com">Ridiculous Fishing</a> is an iOS game about traditional fishing with miniguns, chainsaws, and hairdryers.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 25 Mar 2013 12:25:54 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/463/talkshow-35b.mp3" length="41255798" type="audio/mpeg"/>
+            <itunes:duration>1:25:51</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/35</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Erica Ogg, senior writer and Apple beat reporter for GigaOM, joins John Gruber to discuss Apple’s hiring of Adobe CTO Kevin Lynch, Apple’s PR department, the BBC running ...</itunes:subtitle>
+            <itunes:summary>Special guest Erica Ogg, senior writer and Apple beat reporter for GigaOM, joins John Gruber to discuss Apple’s hiring of Adobe CTO Kevin Lynch, Apple’s PR department, the BBC running a story on a survey conducted by a subsidiary of Samsung’s advertising agency, Eric Schmidt still using a BlackBerry, Google Keep, and Apple’s significantly updated Podcasts app.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>34: I Don't Want To Put Down My Drink</title>
+            <link>http://muleradio.net/thetalkshow/34/</link>
+            <description>Special guest star MG Siegler joins John Gruber to discuss a week jam-packed with news: Phil Schiller's Android-trashing interviews; Samsung's bizarre introduction of the interesting Galaxy S4; Andy Rubin stepping aside (or, as seems more likely, being pushed aside) as Google's executive in charge of Android; and Google's decision to pull the plug in Google Reader.</description>
+            <content:encoded><![CDATA[<p>Special guest star MG Siegler joins John Gruber to discuss a week jam-packed with news: Phil Schiller's Android-trashing interviews; Samsung's bizarre introduction of the interesting Galaxy S4; Andy Rubin stepping aside (or, as seems more likely, being pushed aside) as Google's executive in charge of Android; and Google's decision to pull the plug in Google Reader.</p>
+                <p><a href="http://muleradio.net/thetalkshow/34/">http://muleradio.net/thetalkshow/34/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Finally! Things brings elegant task management to the cloud. <a href="http://culturedcode.com/?utm_source=muleradio.net%2Fthetalkshow%2F&amp;utm_medium=podcast&amp;utm_campaign=Things%2BCloud%2B2013-03">Get it now</a>.</p>
+                
+                <p><a href="http://www.pixelmator.com">Pixelmator</a>: Beautifully designed, easy-to-use, fast, and powerful image editing app for OS X.</p>
+                
+                <p><a href="https://itunes.apple.com/us/app/simple-bracket/id598075243?mt=8">Simple Bracket</a>, a new iPhone app from Studio Neat for filling in March Madness brackets.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 15 Mar 2013 18:46:03 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/464/talkshow-35.mp3" length="55355861" type="audio/mpeg"/>
+            <itunes:duration>1:55:14</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/34</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest star MG Siegler joins John Gruber to discuss a week jam-packed with news: Phil Schiller's Android-trashing interviews; Samsung's bizarre introduction of the interesting Galaxy S4; Andy Rubin stepping ...</itunes:subtitle>
+            <itunes:summary>Special guest star MG Siegler joins John Gruber to discuss a week jam-packed with news: Phil Schiller's Android-trashing interviews; Samsung's bizarre introduction of the interesting Galaxy S4; Andy Rubin stepping aside (or, as seems more likely, being pushed aside) as Google's executive in charge of Android; and Google's decision to pull the plug in Google Reader.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>33: Apple's Actual Problems</title>
+            <link>http://muleradio.net/thetalkshow/33/</link>
+            <description>Special guest Guy English joins John Gruber to talk about the gaping holes in the "Apple is working on a watch" rumors and the actual major problems and risks Apple faces during the next few years.</description>
+            <content:encoded><![CDATA[<p>Special guest <a href="http://twitter.com/gte">Guy English</a> joins John Gruber to talk about the gaping holes in the "Apple is working on a watch" rumors and the actual major problems and risks Apple faces during the next few years.</p>
+                <p><a href="http://muleradio.net/thetalkshow/33/">http://muleradio.net/thetalkshow/33/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Visit <a href="http://www.audiblepodcast.com/thetalkshow">Audible.com</a> for a free, 30 day trial and choose from 100,000+ audiobooks.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Thu, 7 Mar 2013 09:33:16 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/465/talkshow-33.mp3" length="46827821" type="audio/mpeg"/>
+            <itunes:duration>1:37:28</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/33</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Guy English joins John Gruber to talk about the gaping holes in the "Apple is working on a watch" rumors and the actual major problems and risks Apple ...</itunes:subtitle>
+            <itunes:summary>Special guest Guy English joins John Gruber to talk about the gaping holes in the "Apple is working on a watch" rumors and the actual major problems and risks Apple faces during the next few years.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>32: Denied Permission for an Emergency Landing at Clavius</title>
+            <link>http://muleradio.net/thetalkshow/32/</link>
+            <description>Special guest Jim Coudal joins John Gruber to discuss Stanley Kubrick's "2001: A Space Odyssey", The Deck network and the state of online advertising, and the just-completed Webstock conference in Wellington, New Zealand.</description>
+            <content:encoded><![CDATA[<p>Special guest <a href="https://twitter.com/coudal">Jim Coudal</a> joins John Gruber to discuss Stanley Kubrick's "2001: A Space Odyssey", The Deck network and the state of online advertising, and the just-completed <a href="http://www.webstock.org.nz/13/">Webstock</a> conference in Wellington, New Zealand.</p>
+                <p><a href="http://muleradio.net/thetalkshow/32/">http://muleradio.net/thetalkshow/32/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="https://www.everpix.com/campaign.html?origin=thetalkshow">Everpix</a>: A smart photo platform that helps you make sense of your growing photo collection.</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 22 Feb 2013 15:51:43 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/466/talkshow-32.mp3" length="34099919" type="audio/mpeg"/>
+            <itunes:duration>1:11:03</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/32</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Jim Coudal joins John Gruber to discuss Stanley Kubrick's "2001: A Space Odyssey", The Deck network and the state of online advertising, and the just-completed Webstock conference in ...</itunes:subtitle>
+            <itunes:summary>Special guest Jim Coudal joins John Gruber to discuss Stanley Kubrick's "2001: A Space Odyssey", The Deck network and the state of online advertising, and the just-completed Webstock conference in Wellington, New Zealand.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>31: Velocity Hotels</title>
+            <link>http://muleradio.net/thetalkshow/31/</link>
+            <description>Very special guests Paul Kafasis and Scott Simpson join John Gruber for an episode recorded in Mule Radio's studio in San Francisco, at the end of this year's Macworld/iWorld conference and trade show. Topics include the Macworld event and an innovative concept for reinventing the hotel industry.</description>
+            <content:encoded><![CDATA[<p>Very special guests <a href="http://www.onefoottsunami.com/">Paul Kafasis</a> and <a href="http://yourmonkeycalled.com/">Scott Simpson</a> join John Gruber for an episode recorded in Mule Radio's studio in San Francisco, at the end of this year's Macworld/iWorld conference and trade show. Topics include the Macworld event and an innovative concept for reinventing the hotel industry.</p>
+                <p><a href="http://muleradio.net/thetalkshow/31/">http://muleradio.net/thetalkshow/31/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 4 Feb 2013 17:58:30 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/467/talkshow-31.mp3" length="33236624" type="audio/mpeg"/>
+            <itunes:duration>1:09:09</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/31</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Very special guests Paul Kafasis and Scott Simpson join John Gruber for an episode recorded in Mule Radio's studio in San Francisco, at the end of this year's Macworld/iWorld conference ...</itunes:subtitle>
+            <itunes:summary>Very special guests Paul Kafasis and Scott Simpson join John Gruber for an episode recorded in Mule Radio's studio in San Francisco, at the end of this year's Macworld/iWorld conference and trade show. Topics include the Macworld event and an innovative concept for reinventing the hotel industry.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>30: Buy High, Sell Low</title>
+            <link>http://muleradio.net/thetalkshow/30/</link>
+            <description>Special guest Marco Arment joins John Gruber to talk about Apple's quarterly earnings and resulting stock price dive, Marco's new car podcast, and the original cocktail, the Old-Fashioned.</description>
+            <content:encoded><![CDATA[<p>Special guest Marco Arment joins John Gruber to talk about Apple's quarterly earnings and resulting stock price dive, Marco's new car podcast, and the original cocktail, the Old-Fashioned.</p>
+                <p><a href="http://muleradio.net/thetalkshow/30/">http://muleradio.net/thetalkshow/30/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://squarespace.com/thetalkshow">Squarespace</a>: Everything you need to build exceptional websites!</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&amp;utm_medium=podcast&amp;utm_campaign=episode21">Tonx</a>: A coffee sourcing, roasting &amp; shipping service. Don't drink stale coffee. Try us free.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 25 Jan 2013 12:48:24 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/468/talkshow-30.mp3" length="60818170" type="audio/mpeg"/>
+            <itunes:duration>2:06:36</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/30</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Marco Arment joins John Gruber to talk about Apple's quarterly earnings and resulting stock price dive, Marco's new car podcast, and the original cocktail, the Old-Fashioned.</itunes:subtitle>
+            <itunes:summary>Special guest Marco Arment joins John Gruber to talk about Apple's quarterly earnings and resulting stock price dive, Marco's new car podcast, and the original cocktail, the Old-Fashioned.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>29: The Mac Faithful</title>
+            <link>http://muleradio.net/thetalkshow/29/</link>
+            <description>Special guest John Moltz joins John Gruber to discuss Apple's battered stock price, just what it is about Apple that makes so many people lose their damn minds, the pace of innovation, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest <a href="http://verynicewebsite.net">John Moltz</a> joins John Gruber to discuss Apple's battered stock price, just what it is about Apple that makes so many people lose their damn minds, the pace of innovation, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/29/">http://muleradio.net/thetalkshow/29/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://infiniterefrigerator.com/thetalkshow">Infinite Refrigerator</a> The kid- and kitchen-friendly app for archiving and sharing childhoods.</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&amp;utm_medium=podcast&amp;utm_campaign=episode21">Tonx</a>: A coffee sourcing, roasting &amp; shipping service. Don't drink stale coffee. Try us free.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 18 Jan 2013 10:46:11 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/469/talkshow-29.mp3" length="39262969" type="audio/mpeg"/>
+            <itunes:duration>1:21:42</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/29</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber to discuss Apple's battered stock price, just what it is about Apple that makes so many people lose their damn minds, the pace ...</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber to discuss Apple's battered stock price, just what it is about Apple that makes so many people lose their damn minds, the pace of innovation, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>28: Inappropriate Outfits</title>
+            <link>http://muleradio.net/thetalkshow/28/</link>
+            <description>Special guest Dan Frommer joins John Gruber to discuss CES 2013, the disparity in display size between the iPhone and all of its competitors, and Dan's new endeavor, City Notes.</description>
+            <content:encoded><![CDATA[<p>Special guest Dan Frommer joins John Gruber to discuss CES 2013, the disparity in display size between the iPhone and all of its competitors, and Dan's new endeavor, City Notes.</p>
+                <p><a href="http://muleradio.net/thetalkshow/28/">http://muleradio.net/thetalkshow/28/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.globaldelight.com/boom/?utm_source=daringfireball&utm_medium=banner&utm_campaign=dftalkshow072012">Boom</a>  A simple volume booster and equalizer for your Mac.</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&amp;utm_medium=podcast&amp;utm_campaign=episode21">Tonx</a>: A coffee sourcing, roasting &amp; shipping service. Don't drink stale coffee. Try us free.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Mon, 14 Jan 2013 13:19:51 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/470/talkshow-28.mp3" length="46752798" type="audio/mpeg"/>
+            <itunes:duration>1:37:18</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/28</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Dan Frommer joins John Gruber to discuss CES 2013, the disparity in display size between the iPhone and all of its competitors, and Dan's new endeavor, City Notes.</itunes:subtitle>
+            <itunes:summary>Special guest Dan Frommer joins John Gruber to discuss CES 2013, the disparity in display size between the iPhone and all of its competitors, and Dan's new endeavor, City Notes.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>27: The Glass Something or Another</title>
+            <link>http://muleradio.net/thetalkshow/27/</link>
+            <description>Special guest Dave Pell joins John Gruber for a discussion of news media, branding, independent publishing, and the new Google Maps app for iPhone.</description>
+            <content:encoded><![CDATA[<p>Special guest Dave Pell joins John Gruber for a discussion of news media, branding, independent publishing, and the new Google Maps app for iPhone.</p>
+                <p><a href="http://muleradio.net/thetalkshow/27/">http://muleradio.net/thetalkshow/27/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Global Delight's camera, video, screen capture and volume boosting apps on sale for Holidays and a chance to win an iPad mini.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Tue, 18 Dec 2012 10:23:47 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/471/talkshow-27.mp3" length="41407939" type="audio/mpeg"/>
+            <itunes:duration>1:26:10</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/27</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Dave Pell joins John Gruber for a discussion of news media, branding, independent publishing, and the new Google Maps app for iPhone.</itunes:subtitle>
+            <itunes:summary>Special guest Dave Pell joins John Gruber for a discussion of news media, branding, independent publishing, and the new Google Maps app for iPhone.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>26: Steve Wouldn't Eat An Energy Bar</title>
+            <link>http://muleradio.net/thetalkshow/26/</link>
+            <description>Special guest John Moltz joins John Gruber to discuss The Magazine and the demise of The Daily, Tim Cook's media blitz and Apple's recent management shake up, Twitterrific 5, and Apple's next design aesthetic.</description>
+            <content:encoded><![CDATA[<p>Special guest John Moltz joins John Gruber to discuss The Magazine and the demise of The Daily, Tim Cook's media blitz and Apple's recent management shake up, Twitterrific 5, and Apple's next design aesthetic.</p>
+                <p><a href="http://muleradio.net/thetalkshow/26/">http://muleradio.net/thetalkshow/26/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&amp;utm_medium=podcast&amp;utm_campaign=episode21">Tonx</a>: A coffee sourcing, roasting &amp; shipping service. Don't drink stale coffee. Try us free.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 7 Dec 2012 10:22:50 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/472/talkshow-26.mp3" length="33851864" type="audio/mpeg"/>
+            <itunes:duration>1:10:26</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/26</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber to discuss The Magazine and the demise of The Daily, Tim Cook's media blitz and Apple's recent management shake up, Twitterrific 5, and ...</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber to discuss The Magazine and the demise of The Daily, Tim Cook's media blitz and Apple's recent management shake up, Twitterrific 5, and Apple's next design aesthetic.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>25: A Therapeutic Dose of Imodium</title>
+            <link>http://muleradio.net/thetalkshow/25/</link>
+            <description>Very special guest Merlin Mann joins John Gruber to talk about booze, iTunes 11, and the sorry state of over-the-counter cold medication in the U.S.</description>
+            <content:encoded><![CDATA[<p>Very special guest Merlin Mann joins John Gruber to talk about booze, iTunes 11, and the sorry state of over-the-counter cold medication in the U.S.</p>
+                <p><a href="http://muleradio.net/thetalkshow/25/">http://muleradio.net/thetalkshow/25/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>A powerful-yet-simple camera app for iPhoneographers to shoot, edit and share beautiful photos and videos.</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&amp;utm_medium=podcast&amp;utm_campaign=episode21">Tonx</a>: A coffee sourcing, roasting &amp; shipping service. Don't drink stale coffee. Try us free.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Sat, 1 Dec 2012 11:11:16 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/473/talkshow-25.mp3" length="55199548" type="audio/mpeg"/>
+            <itunes:duration>1:54:54</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/25</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Very special guest Merlin Mann joins John Gruber to talk about booze, iTunes 11, and the sorry state of over-the-counter cold medication in the U.S.</itunes:subtitle>
+            <itunes:summary>Very special guest Merlin Mann joins John Gruber to talk about booze, iTunes 11, and the sorry state of over-the-counter cold medication in the U.S.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>24: It's Like Drug Money</title>
+            <link>http://muleradio.net/thetalkshow/24/</link>
+            <description>Special guest Glenn Fleishman joins John Gruber to talk about Jeopardy, independent media (including Glenn's new role as Executive Editor of The Magazine), Microsoft's and Apple's executive shake-ups, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest Glenn Fleishman joins John Gruber to talk about Jeopardy, independent media (including Glenn's new role as Executive Editor of The Magazine), Microsoft's and Apple's executive shake-ups, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/24/">http://muleradio.net/thetalkshow/24/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://gridditor.com/thetalkshow">Gridditor</a> A better way to edit photos.</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&amp;utm_medium=podcast&amp;utm_campaign=episode21">Tonx</a>: A coffee sourcing, roasting &amp; shipping service. Don't drink stale coffee. Try us free.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 16 Nov 2012 12:43:08 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/474/talkshow-24.mp3" length="52707884" type="audio/mpeg"/>
+            <itunes:duration>1:49:43</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/24</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Glenn Fleishman joins John Gruber to talk about Jeopardy, independent media (including Glenn's new role as Executive Editor of The Magazine), Microsoft's and Apple's executive shake-ups, and more.</itunes:subtitle>
+            <itunes:summary>Special guest Glenn Fleishman joins John Gruber to talk about Jeopardy, independent media (including Glenn's new role as Executive Editor of The Magazine), Microsoft's and Apple's executive shake-ups, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>23: More Useful and Less Horrible</title>
+            <link>http://muleradio.net/thetalkshow/23/</link>
+            <description>Special guest Dan Frommer joins John Gruber to talk about the iPad Mini, ideas for the future of iOS, Microsoft Surface, Virgin America and the state of U.S. airlines, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest <a href="http://www.splatf.com/">Dan Frommer</a> joins John Gruber to talk about the iPad Mini, ideas for the future of iOS, Microsoft Surface, Virgin America and the state of U.S. airlines, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/23/">http://muleradio.net/thetalkshow/23/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://bossjockstudio.com/thetalkshow">Bossjock Studio</a> <br />Podcast from iOS... <br />No PC Needed</p>
+                
+                <p><a href="http://bit.ly/voilascreencapture">Voila</a>: A powerful screen capture &amp; screen recording tool for your Mac.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 9 Nov 2012 12:00:00 -0800</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/475/talkshow-23.mp3" length="37895828" type="audio/mpeg"/>
+            <itunes:duration>1:18:51</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/23</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Dan Frommer joins John Gruber to talk about the iPad Mini, ideas for the future of iOS, Microsoft Surface, Virgin America and the state of U.S. airlines, and ...</itunes:subtitle>
+            <itunes:summary>Special guest Dan Frommer joins John Gruber to talk about the iPad Mini, ideas for the future of iOS, Microsoft Surface, Virgin America and the state of U.S. airlines, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>22: Chewbacca Does It Again</title>
+            <link>http://muleradio.net/thetalkshow/22/</link>
+            <description>Special guest MG Siegler returns to talk with John Gruber about the new iPad Mini and iPad 4, Scott Forstall ouster from Apple, Microsoft Surface and the launch of Windows 8, and Disney's acquisition of Lucasfilm and the Star Wars franchise.</description>
+            <content:encoded><![CDATA[<p>Special guest MG Siegler returns to talk with John Gruber about the new iPad Mini and iPad 4, Scott Forstall ouster from Apple, Microsoft Surface and the launch of Windows 8, and Disney's acquisition of Lucasfilm and the Star Wars franchise.</p>
+                <p><a href="http://muleradio.net/thetalkshow/22/">http://muleradio.net/thetalkshow/22/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://getap.ps/appsfire/DF1">Appsfire</a>. Get the best apps. </p>
+                
+                <p><a href="http://checktheweather.co/thetalkshow">Check the Weather</a>. Fast. Accurate. Beautiful.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 2 Nov 2012 12:12:58 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/476/talkshow-22.mp3" length="45283884" type="audio/mpeg"/>
+            <itunes:duration>1:34:15</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/22</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest MG Siegler returns to talk with John Gruber about the new iPad Mini and iPad 4, Scott Forstall ouster from Apple, Microsoft Surface and the launch of Windows ...</itunes:subtitle>
+            <itunes:summary>Special guest MG Siegler returns to talk with John Gruber about the new iPad Mini and iPad 4, Scott Forstall ouster from Apple, Microsoft Surface and the launch of Windows 8, and Disney's acquisition of Lucasfilm and the Star Wars franchise.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>21: Looper</title>
+            <link>http://muleradio.net/thetalkshow/21/</link>
+            <description>Very special guest Rian Johnson, writer-director of the hit movie Looper, joins Adam Lisagor and John Gruber for an in-depth discussion of the film and the art of filmmaking.</description>
+            <content:encoded><![CDATA[<p>Very special guest Rian Johnson, writer-director of the hit movie <em>Looper</em>, joins Adam Lisagor and John Gruber for an in-depth discussion of the film and the art of filmmaking.</p>
+                <p><a href="http://muleradio.net/thetalkshow/21/">http://muleradio.net/thetalkshow/21/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Our 16th season limited-release is <a href="http://fieldnotesbrand.com/salesman/?src_show">The Traveling Salesman Edition</a>.</p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&amp;utm_medium=podcast&amp;utm_campaign=episode21">Tonx</a>: A coffee sourcing, roasting &amp; shipping service. Don't drink stale coffee. Try us free.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 26 Oct 2012 16:46:24 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/477/talkshow-21.mp3" length="46779969" type="audio/mpeg"/>
+            <itunes:duration>1:37:22</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/21</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Very special guest Rian Johnson, writer-director of the hit movie Looper, joins Adam Lisagor and John Gruber for an in-depth discussion of the film and the art of filmmaking.</itunes:subtitle>
+            <itunes:summary>Very special guest Rian Johnson, writer-director of the hit movie Looper, joins Adam Lisagor and John Gruber for an in-depth discussion of the film and the art of filmmaking.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>20: Live From Çingleton</title>
+            <link>http://muleradio.net/thetalkshow/20/</link>
+            <description>Recorded in front of a live audience following the Çingleton conference in historic Old Montréal, Québec, John Gruber is joined by special guest Brent Simmons. Topics include dealing with the fast-changing world of being a Mac/iOS developer, the advantages of native apps over web apps (including how that pertains to Glassboard, Brent's current project), and a whole bunch of stuff about App.net.</description>
+            <content:encoded><![CDATA[<p>Recorded in front of a live audience following the Çingleton conference in historic Old Montréal, Québec, John Gruber is joined by special guest <a href="http://inessential.com/">Brent Simmons</a>. Topics include dealing with the fast-changing world of being a Mac/iOS developer, the advantages of native apps over web apps (including how that pertains to <a href="http://glassboard.com/">Glassboard</a>, Brent's current project), and a whole bunch of stuff about App.net.</p>
+                <p><a href="http://muleradio.net/thetalkshow/20/">http://muleradio.net/thetalkshow/20/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://the-magazine.org/?utm_source=thetalkshow&amp;utm_medium=banner&amp;utm_campaign=thetalkshow">The Magazine</a> Finally, something for geeks like us to put in Newsstand.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 19 Oct 2012 12:12:12 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/478/talkshow-20.mp3" length="23803737" type="audio/mpeg"/>
+            <itunes:duration>49:30</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/20</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Recorded in front of a live audience following the Çingleton conference in historic Old Montréal, Québec, John Gruber is joined by special guest Brent Simmons. Topics include dealing with the ...</itunes:subtitle>
+            <itunes:summary>Recorded in front of a live audience following the Çingleton conference in historic Old Montréal, Québec, John Gruber is joined by special guest Brent Simmons. Topics include dealing with the fast-changing world of being a Mac/iOS developer, the advantages of native apps over web apps (including how that pertains to Glassboard, Brent's current project), and a whole bunch of stuff about App.net.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>19: Ant-Covered Candy Bar</title>
+            <link>http://muleradio.net/thetalkshow/19/</link>
+            <description>Special guest star John Moltz joins John Gruber. Topics include Windows 8 and Microsoft's imminent but still largely mysterious Surface tablets, Apple's new iPods (and their ads), Apple's obsession with making devices ever thinner and lighter, and, of course, Yankees star Alex Rodriguez Ichiro.</description>
+            <content:encoded><![CDATA[<p>Special guest star <a href="http://verynicewebsite.net">John Moltz</a> joins John Gruber. Topics include Windows 8 and Microsoft's imminent but still largely mysterious Surface tablets, Apple's new iPods (and their ads), Apple's obsession with making devices ever thinner and lighter, and, of course, Yankees star <del>Alex Rodriguez</del> Ichiro.</p>
+                <p><a href="http://muleradio.net/thetalkshow/19/">http://muleradio.net/thetalkshow/19/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://echographapp.com/?utm_source=GruberTalkShow&amp;utm_medium=ad1&amp;utm_term=evolved&amp;utm_content=blue-clear&amp;utm_campaign=iPhone5">Now evolved</a> for the iPhone 5</p>
+                
+                <p><a href="http://pixelivery.com/?utm_source=thetalkshow&amp;utm_medium=display&amp;utm_campaign=stateslaunch">Pixelivery</a> Pixel art tees for everybody, from the makers of United Pixelworkers.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 12 Oct 2012 11:24:37 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/479/talkshow-19.mp3" length="39311874" type="audio/mpeg"/>
+            <itunes:duration>1:21:48</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/19</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest star John Moltz joins John Gruber. Topics include Windows 8 and Microsoft's imminent but still largely mysterious Surface tablets, Apple's new iPods (and their ads), Apple's obsession with ...</itunes:subtitle>
+            <itunes:summary>Special guest star John Moltz joins John Gruber. Topics include Windows 8 and Microsoft's imminent but still largely mysterious Surface tablets, Apple's new iPods (and their ads), Apple's obsession with making devices ever thinner and lighter, and, of course, Yankees star Alex Rodriguez Ichiro.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>18: Instawhatsit</title>
+            <link>http://muleradio.net/thetalkshow/18/</link>
+            <description>Very special guest Marco Arment joins John Gruber to talk about the iPhone 5, accessibility features in Instapaper, Instagram filters, the future of photography, and more.</description>
+            <content:encoded><![CDATA[<p>Very special guest Marco Arment joins John Gruber to talk about the iPhone 5, accessibility features in Instapaper, Instagram filters, the future of photography, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/18/">http://muleradio.net/thetalkshow/18/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://bit.ly/gameyourvideo">Game Your Video</a> A delightful and easy way to create cool videos!</p>
+                
+                <p><a href="http://www.macminicolo.net/thetalkshow">Macminicolo</a> Low Cost. High performance. It's the perfect Mac server. </p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 28 Sep 2012 14:00:04 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/480/talkshow-18.mp3" length="64221824" type="audio/mpeg"/>
+            <itunes:duration>2:13:42</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/18</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Very special guest Marco Arment joins John Gruber to talk about the iPhone 5, accessibility features in Instapaper, Instagram filters, the future of photography, and more.</itunes:subtitle>
+            <itunes:summary>Very special guest Marco Arment joins John Gruber to talk about the iPhone 5, accessibility features in Instapaper, Instagram filters, the future of photography, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>17: The iPhone 5 Episode</title>
+            <link>http://muleradio.net/thetalkshow/17/</link>
+            <description>Special guest MG Siegler joins John Gruber this week to discuss -- what else? -- the iPhone 5 and iOS 6.</description>
+            <content:encoded><![CDATA[<p>Special guest MG Siegler joins John Gruber this week to discuss -- what else? -- the iPhone 5 and iOS 6.</p>
+                <p><a href="http://muleradio.net/thetalkshow/17/">http://muleradio.net/thetalkshow/17/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.logyourrun.com/iphone">Log Your Run</a> Track your outdoor activities with your iPhone.</p>
+                
+                <p><a href="http://www.pixelmator.com/">Pixelmator</a>: Beautifully designed, powerful image editing for Mac OS X</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Thu, 20 Sep 2012 14:00:00 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/481/talkshow-17.mp3" length="51447946" type="audio/mpeg"/>
+            <itunes:duration>01:47:06</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/17</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest MG Siegler joins John Gruber this week to discuss -- what else? -- the iPhone 5 and iOS 6.</itunes:subtitle>
+            <itunes:summary>Special guest MG Siegler joins John Gruber this week to discuss -- what else? -- the iPhone 5 and iOS 6.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>16: Big in Indonesia</title>
+            <link>http://muleradio.net/thetalkshow/16/</link>
+            <description>Special guest Om Malik joins John Gruber in the Mule Radio studio to talk about last week's announcements from Nokia and Amazon, and, of course, all of the news from this week's iPhone 5 event in San Francisco.</description>
+            <content:encoded><![CDATA[<p>Special guest <a href="http://om.co">Om Malik</a> joins John Gruber in the Mule Radio studio to talk about last week's announcements from Nokia and Amazon, and, of course, all of the news from this week's iPhone 5 event in San Francisco.</p>
+                <p><a href="http://muleradio.net/thetalkshow/16/">http://muleradio.net/thetalkshow/16/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.frankandoak.com/thetalkshow">Frank &amp; Oak</a>. We help men look good. The easiest way to shop with free at home try on.</p>
+                
+                <p>Snap or record with live filters and share it faster with <a href="http://www.globaldelight.com/iphone/camerapluspro/?utm_source=daringfireball&utm_medium=banner&utm_campaign=dftalkshow092012">Camera Plus Pro</a>.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Thu, 13 Sep 2012 13:18:36 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/482/talkshow-16-2.mp3" length="46879861" type="audio/mpeg"/>
+            <itunes:duration>1:37:12</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/16</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Om Malik joins John Gruber in the Mule Radio studio to talk about last week's announcements from Nokia and Amazon, and, of course, all of the news from ...</itunes:subtitle>
+            <itunes:summary>Special guest Om Malik joins John Gruber in the Mule Radio studio to talk about last week's announcements from Nokia and Amazon, and, of course, all of the news from this week's iPhone 5 event in San Francisco.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>15: The Moltzphone EXTREMO III DX</title>
+            <link>http://muleradio.net/thetalkshow/15/</link>
+            <description>Special guest John Moltz joins John Gruber to discuss the new phones from Motorola and Nokia, next week's Apple event where the iPhone 5 is presumed to be introduced, the Chinese phone maker that has already shipped an iPhone 5 knockoff, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest <a href="http://verynicewebsite.com/">John Moltz</a> joins John Gruber to discuss the new phones from Motorola and Nokia, next week's Apple event where the iPhone 5 is presumed to be introduced, the Chinese phone maker that has already shipped an iPhone 5 knockoff, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/15/">http://muleradio.net/thetalkshow/15/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://agiletortoise.com/drafts">Drafts</a>. Where text starts on your iPhone or iPad.</p>
+                
+                <p><a href="http://www.frankandoak.com/thetalkshow">Frank &amp; Oak</a>. We help men look good. The easiest way to shop with free at home try on.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 7 Sep 2012 11:20:00 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/483/talkshow-15.mp3" length="42835897" type="audio/mpeg"/>
+            <itunes:duration>1:29:09</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/15</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber to discuss the new phones from Motorola and Nokia, next week's Apple event where the iPhone 5 is presumed to be introduced, the ...</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber to discuss the new phones from Motorola and Nokia, next week's Apple event where the iPhone 5 is presumed to be introduced, the Chinese phone maker that has already shipped an iPhone 5 knockoff, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>14: You're Not Gonna Name Him Fuzzbutt</title>
+            <link>http://muleradio.net/thetalkshow/14/</link>
+            <description>Special guest star Craig Hockenberry joins John Gruber to discuss the escalating tensions between Twitter and its third-party developers, along with Twitter's relationship with other networks, like Tumblr and Instagram. Other topics include App.net and developing a retina-display version of xScope for the Mac.</description>
+            <content:encoded><![CDATA[<p>Special guest star Craig Hockenberry joins John Gruber to discuss the escalating tensions between Twitter and its third-party developers, along with Twitter's relationship with other networks, like Tumblr and Instagram. Other topics include App.net and developing a retina-display version of xScope for the Mac.</p>
+                <p><a href="http://muleradio.net/thetalkshow/14/">http://muleradio.net/thetalkshow/14/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://getap.ps/appsfire/DF1">Appsfire</a>. Get the best apps. </p>
+                
+                <p><a href="http://in.tweetkeeperapp.com/tts1">Tweet Keeper</a>. Easily create an archive of tweets on your iPhone for searching, rediscovering, exporting, and safekeeping.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 24 Aug 2012 13:06:58 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/484/talkshow-14.mp3" length="39171858" type="audio/mpeg"/>
+            <itunes:duration>1:21:31</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/14</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest star Craig Hockenberry joins John Gruber to discuss the escalating tensions between Twitter and its third-party developers, along with Twitter's relationship with other networks, like Tumblr and Instagram. ...</itunes:subtitle>
+            <itunes:summary>Special guest star Craig Hockenberry joins John Gruber to discuss the escalating tensions between Twitter and its third-party developers, along with Twitter's relationship with other networks, like Tumblr and Instagram. Other topics include App.net and developing a retina-display version of xScope for the Mac.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>13: Unusually Open</title>
+            <link>http://muleradio.net/thetalkshow/13/</link>
+            <description>Special guest Michael Lopp joins John Gruber this week. Topics include the retina display revolution and its effect on typography for the screen, whether Apple would or even could ever again do a “One More Thing”, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest Michael Lopp joins John Gruber this week. Topics include the retina display revolution and its effect on typography for the screen, whether Apple would or even could ever again do a “One More Thing”, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/13/">http://muleradio.net/thetalkshow/13/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://huelessapp.com/">Hueless</a>. Pure black &amp; white bliss for iPhone.</p>
+                
+                <p><a href="http://bit.ly/photodelight2">Photo Delight</a>. Color-splashing photos on your iPad was never so fun, fast and easy!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 17 Aug 2012 13:24:02 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/485/talkshow-13.mp3" length="49267871" type="audio/mpeg"/>
+            <itunes:duration>1:42:33</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/13</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Michael Lopp joins John Gruber this week. Topics include the retina display revolution and its effect on typography for the screen, whether Apple would or even could ever ...</itunes:subtitle>
+            <itunes:summary>Special guest Michael Lopp joins John Gruber this week. Topics include the retina display revolution and its effect on typography for the screen, whether Apple would or even could ever again do a “One More Thing”, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>12: Down to the Mac Nerd Guys</title>
+            <link>http://muleradio.net/thetalkshow/12/</link>
+            <description>Special guest star John Siracusa joins John Gruber for a quick two-hour twenty-minute chat about Mat Honan's Apple ID account hacking, App.net and Twitter, Mountain Lion and Siracusa's review thereof, and the origins and future of iOS.</description>
+            <content:encoded><![CDATA[<p>Special guest star John Siracusa joins John Gruber for a quick two-hour twenty-minute chat about Mat Honan's Apple ID account hacking, App.net and Twitter, Mountain Lion and Siracusa's review thereof, and the origins and future of iOS.</p>
+                <p><a href="http://muleradio.net/thetalkshow/12/">http://muleradio.net/thetalkshow/12/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://click.linksynergy.com/fs-bin/stat?id=MGS4/MOnCuo&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fidea-bucket%252Fid455035498%253Fmt%253D">Idea Bucket</a>. A better way to find your best ideas.</p>
+                
+                <p><a href="http://www.macworld.com/superguide/#tk.MW_SG_TSS">Great ebooks</a> with in-depth information from the world's top Apple experts. Mountain Lion, iPhone photography, Mac Gems, and more!</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 10 Aug 2012 10:17:04 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/486/talkshow-12.mp3" length="67347950" type="audio/mpeg"/>
+            <itunes:duration>2:20:13</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/12</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest star John Siracusa joins John Gruber for a quick two-hour twenty-minute chat about Mat Honan's Apple ID account hacking, App.net and Twitter, Mountain Lion and Siracusa's review thereof, ...</itunes:subtitle>
+            <itunes:summary>Special guest star John Siracusa joins John Gruber for a quick two-hour twenty-minute chat about Mat Honan's Apple ID account hacking, App.net and Twitter, Mountain Lion and Siracusa's review thereof, and the origins and future of iOS.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>11: We're Going to Get You Some Jeans Today, Jimmy</title>
+            <link>http://muleradio.net/thetalkshow/11/</link>
+            <description>Special guest John Moltz joins John Gruber to discuss the new "genius" Apple commercials, the Apple v. Samsung court trial, Andrew Ross Sorkin's suggestions for major acquisitions by Apple, and more.</description>
+            <content:encoded><![CDATA[<p>Special guest John Moltz joins John Gruber to discuss the new "genius" Apple commercials, the Apple v. Samsung court trial, Andrew Ross Sorkin's suggestions for major acquisitions by Apple, and more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/11/">http://muleradio.net/thetalkshow/11/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://msre.ly/flixel.com">Flixel</a> - Inspired by cinemagraphs, Flixel lets you create beautiful living photos in seconds.</p>
+                
+                <p><a href="http://www.pixelmator.com/">Pixelmator</a>: Beautifully designed, powerful image editing for Mac OS X</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 3 Aug 2012 11:00:00 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/487/talkshow-11.mp3" length="32865689" type="audio/mpeg"/>
+            <itunes:duration>1:08:23</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/11</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest John Moltz joins John Gruber to discuss the new "genius" Apple commercials, the Apple v. Samsung court trial, Andrew Ross Sorkin's suggestions for major acquisitions by Apple, and ...</itunes:subtitle>
+            <itunes:summary>Special guest John Moltz joins John Gruber to discuss the new "genius" Apple commercials, the Apple v. Samsung court trial, Andrew Ross Sorkin's suggestions for major acquisitions by Apple, and more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>10: The Next Big Thing</title>
+            <link>http://muleradio.net/thetalkshow/10/</link>
+            <description>Special guest MG Siegler joins John Gruber to discuss Marissa Mayer being hired as Yahoo CEO, the Nexus 7 and the tablet market, and today’s release of OS X 10.8 Mountain Lion.</description>
+            <content:encoded><![CDATA[<p>Special guest MG Siegler joins John Gruber to discuss Marissa Mayer being hired as Yahoo CEO, the Nexus 7 and the tablet market, and today’s release of OS X 10.8 Mountain Lion.</p>
+                <p><a href="http://muleradio.net/thetalkshow/10/">http://muleradio.net/thetalkshow/10/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.studioneat.com/?utm_source=thetalkshow&utm_medium=ad&utm_campaign=july">Studio Neat</a>. Simple stuff for iOS, made in the U.S.A. </p>
+                
+                <p><a href="https://tonx.org/?utm_source=daringfireball&utm_medium=post&utm_campaign=podcast">Tonx</a>: The best fresh roasted coffee right to your door.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Wed, 25 Jul 2012 10:00:00 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/488/talkshow-10.mp3" length="49651976" type="audio/mpeg"/>
+            <itunes:duration>1:43:21</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/10</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest MG Siegler joins John Gruber to discuss Marissa Mayer being hired as Yahoo CEO, the Nexus 7 and the tablet market, and today’s release of OS X 10.8 ...</itunes:subtitle>
+            <itunes:summary>Special guest MG Siegler joins John Gruber to discuss Marissa Mayer being hired as Yahoo CEO, the Nexus 7 and the tablet market, and today’s release of OS X 10.8 Mountain Lion.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>9: Command Versus Splat</title>
+            <link>http://muleradio.net/thetalkshow/9/</link>
+            <description>Special guest Dan Frommer joins John Gruber for a discussion on topics including the future of Twitter (and third-party Twitter client apps), the purportedly imminent iPad Mini and the tablet market in general, and the state of technology media.</description>
+            <content:encoded><![CDATA[<p>Special guest Dan Frommer joins John Gruber for a discussion on topics including the future of Twitter (and third-party Twitter client apps), the purportedly imminent iPad Mini and the tablet market in general, and the state of technology media.</p>
+                <p><a href="http://muleradio.net/thetalkshow/9/">http://muleradio.net/thetalkshow/9/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.globaldelight.com/boom/?utm_source=daringfireball&utm_medium=banner&utm_campaign=dftalkshow072012">Boom</a>  A simple volume booster and equalizer for your Mac.</p>
+                
+                <p><a href="http://theadventuresofalex.com">The Adventures of Alex: Electricity</a> - Discover where electricity really comes from.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 13 Jul 2012 13:56:51 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/489/talkshow-9.mp3" length="50467832" type="audio/mpeg"/>
+            <itunes:duration>1:45:03</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/9</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Special guest Dan Frommer joins John Gruber for a discussion on topics including the future of Twitter (and third-party Twitter client apps), the purportedly imminent iPad Mini and the tablet ...</itunes:subtitle>
+            <itunes:summary>Special guest Dan Frommer joins John Gruber for a discussion on topics including the future of Twitter (and third-party Twitter client apps), the purportedly imminent iPad Mini and the tablet market in general, and the state of technology media.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>8: Like Giving Natalie Portman a Trucker Cap</title>
+            <link>http://muleradio.net/thetalkshow/8/</link>
+            <description>Merlin Mann joins John Gruber for a quick two-hour holiday-week chat.</description>
+            <content:encoded><![CDATA[<p>Merlin Mann joins John Gruber for a quick two-hour holiday-week chat.</p>
+                <p><a href="http://muleradio.net/thetalkshow/8/">http://muleradio.net/thetalkshow/8/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://appcubby.com/launch-center/">Launch Center Pro</a>. Launch actions, not just apps!</p>
+                
+                <p><a href="http://in.tapstream.com/talkshow">Tapstream</a>. X-ray for your iOS sales data.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 6 Jul 2012 11:52:58 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/490/talkshow-8.mp3" length="62863875" type="audio/mpeg"/>
+            <itunes:duration>2:10:52</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/8</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>Merlin Mann joins John Gruber for a quick two-hour holiday-week chat.</itunes:subtitle>
+            <itunes:summary>Merlin Mann joins John Gruber for a quick two-hour holiday-week chat.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>7: Hot Ladies in Movies</title>
+            <link>http://muleradio.net/thetalkshow/7/</link>
+            <description>John August and Adam Lisagor join John Gruber to discuss Apple's new iOS Podcasts app, Google's announcements from the I/O developers conference, creating new software to scratch your own itches, and much more.</description>
+            <content:encoded><![CDATA[<p>John August and Adam Lisagor join John Gruber to discuss Apple's new iOS Podcasts app, Google's announcements from the I/O developers conference, creating new software to scratch your own itches, and much more.</p>
+                <p><a href="http://muleradio.net/thetalkshow/7/">http://muleradio.net/thetalkshow/7/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p>Shoot with live filters and share it faster with <a href="http://www.globaldelight.com/iphone/camerapluspro/?utm_source=daringfireball&utm_medium=banner&utm_campaign=dftalkshow062012">Camera Plus Pro</a>.</p>
+                
+                <p><a href="http://www.olloclip.com/?utm_source=DaringFireball&utm_medium=banner&utm_campaign=DaringFireball-201206">Olloclip</a>. 3 lenses in one for the iPhone 4S/4.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 29 Jun 2012 10:03:33 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/491/talkshow-7.mp3" length="51331336" type="audio/mpeg"/>
+            <itunes:duration>1:46:51</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/7</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>John August and Adam Lisagor join John Gruber to discuss Apple's new iOS Podcasts app, Google's announcements from the I/O developers conference, creating new software to scratch your own itches, ...</itunes:subtitle>
+            <itunes:summary>John August and Adam Lisagor join John Gruber to discuss Apple's new iOS Podcasts app, Google's announcements from the I/O developers conference, creating new software to scratch your own itches, and much more.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        <item>
+            <title>6: Laggy by Any Standard</title>
+            <link>http://muleradio.net/thetalkshow/6/</link>
+            <description>This week on America's favorite two-star podcast, John Gruber is joined by special guest star Guy English. Topics include various details from last week's WWDC (pull-to-refresh in iOS 6, Passbook, and anti-aliasing nerdery), Microsoft Surface, and a few hints about Guy's new company and their upcoming Mac app, Napkin.</description>
+            <content:encoded><![CDATA[<p>This week on America's favorite two-star podcast, John Gruber is joined by special guest star <a href="http://kickingbear.com/">Guy English</a>. Topics include various details from last week's WWDC (pull-to-refresh in iOS 6, Passbook, and anti-aliasing nerdery), Microsoft Surface, and a few hints about Guy's new company and their upcoming Mac app, Napkin.</p>
+                <p><a href="http://muleradio.net/thetalkshow/6/">http://muleradio.net/thetalkshow/6/</a></p>
+                
+
+                
+                <p>Sponsored by</p>
+                
+                <p><a href="http://www.algoriddim.com/vjay?utm_source=daringfireball&utm_medium=banner&utm_campaign=daringfireball-201206">Vjay</a>. See, hear, and touch the future.</p>
+                
+                <p><a href="http://flexibits.com/?pk_campaign=talkshow">Fantastical</a>. The Mac calendar you'll actually enjoy using.</p>
+                
+                
+            ]]></content:encoded>
+
+            <pubDate>Fri, 22 Jun 2012 11:39:40 -0700</pubDate>
+            
+            
+                
+            <enclosure url="http://tracking.feedpress.it/link/1068/492/talkshow-6.mp3" length="58019054" type="audio/mpeg"/>
+            <itunes:duration>1:41:25</itunes:duration>
+                
+            
+            
+
+            <guid>http://muleradio.net/thetalkshow/6</guid>
+            <itunes:author>Mule Radio Syndicate</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>This week on America's favorite two-star podcast, John Gruber is joined by special guest star Guy English. Topics include various details from last week's WWDC (pull-to-refresh in iOS 6, Passbook, ...</itunes:subtitle>
+            <itunes:summary>This week on America's favorite two-star podcast, John Gruber is joined by special guest star Guy English. Topics include various details from last week's WWDC (pull-to-refresh in iOS 6, Passbook, and anti-aliasing nerdery), Microsoft Surface, and a few hints about Guy's new company and their upcoming Mac app, Napkin.</itunes:summary>
+            <media:thumbnail url="http://media.muleradio.net/images/shows/thetalkshow/itunes.jpg"/>
+        </item>
+        
+        
+        
+    </channel>
+</rss>

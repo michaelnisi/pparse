@@ -50,20 +50,20 @@
 }
 
 + (MNFeedEntry *)entryWithTitle:(NSString *)title
-                       author:(NSString *)author
-                     subtitle:(NSString *)subtitle
-                      summary:(NSString *)summary
-                          url:(NSString *)url
-                         guid:(NSString *)guid
-                      pubDate:(NSDate *)pubDate {
+                         author:(NSString *)author
+                       subtitle:(NSString *)subtitle
+                        summary:(NSString *)summary
+                            url:(NSString *)url
+                           guid:(NSString *)guid
+                        pubDate:(NSDate *)pubDate {
     
     return [[MNFeedEntry alloc] initWithTitle:title
-                                   author:author
-                                 subtitle:subtitle
-                                  summary:summary
-                                      url:url
-                                     guid:guid
-                                  pubDate:pubDate];
+                                       author:author
+                                     subtitle:subtitle
+                                      summary:summary
+                                          url:url
+                                         guid:guid
+                                      pubDate:pubDate];
 }
 
 @end
@@ -131,7 +131,7 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
         xmlFreeParserCtxt(_context);
         _context = nil;
     }
-
+    
     _count = 0;
     _characterBuffer = nil;
     _episode = nil;
@@ -152,7 +152,20 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
                                            NULL);
     }
     
-   return self;
+    return self;
+}
+
+
+- (void)setStoringCharacters:(BOOL)value {
+    if (!value) [_characterBuffer setLength:0];
+    _bufferingChars = value;
+}
+
+# pragma mark - MNFeedParse (API)
+
++ (MNFeedParser *)parserWith:(id<MNFeedParserDelegate>)delegate
+               dateFormatter:(NSDateFormatter *)dateFormatter {
+    return [[MNFeedParser alloc] initWith:delegate dateFormatter:dateFormatter];
 }
 
 - (id)initWith:(id <MNFeedParserDelegate>)delegate
@@ -167,38 +180,32 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
     return self;
 }
 
-+ (MNFeedParser *)parserWith:(id<MNFeedParserDelegate>)delegate
-                dateFormatter:(NSDateFormatter *)dateFormatter {
-    return [[MNFeedParser alloc] initWith:delegate dateFormatter:dateFormatter];
-}
-
-- (void)setStoringCharacters:(BOOL)value {
-    if (!value) [_characterBuffer setLength:0];
-    _bufferingChars = value;
-}
-
 - (BOOL)parse:(NSData *)data {
-    int stat;
-
-    if (!data) {
-        stat = xmlParseChunk(_context, NULL, 0, 1);
-    } else {
-        stat = xmlParseChunk(_context, (const char *)[data bytes], [data length], 0);
-    }
+    int stat = data ?
+    xmlParseChunk(_context, (const char *)[data bytes], [data length], 0) :
+    xmlParseChunk(_context, NULL, 0, 1);
     
-    if (stat != 0) {
-        [self delegateError:"XML parser error"];
-    }
-    
-    if (_aborted) {
-        [self delegateError:"Aborted by user"];
-    }
+    if (stat != 0) [self delegateError:"XML parser error"];
+    if (_aborted) [self delegateError:"Aborted by user"];
     
     return stat == 0;
 }
 
 - (void)abortParsing {
     _aborted = YES;
+    [self parse:nil];
+}
+
+- (void)parseStream:(NSInputStream *)stream withMaxLength:(NSInteger)maxLength {
+    NSInteger result;
+    uint8_t buffer[maxLength];
+    [stream open];
+    while((result = [stream read:buffer maxLength:maxLength]) > 0) {
+        [self parse:[NSData dataWithBytesNoCopy:buffer
+                                         length:result
+                                   freeWhenDone:NO]];
+    }
+    [stream close];
     [self parse:nil];
 }
 
@@ -214,9 +221,9 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
                                                   encoding:NSASCIIStringEncoding];
     
     NSDictionary *errorDictionary = @{
-        NSLocalizedDescriptionKey : description
-    };
-
+                                      NSLocalizedDescriptionKey : description
+                                      };
+    
     NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain
                                          code:NSXMLParserInternalError
                                      userInfo:errorDictionary];
@@ -296,7 +303,9 @@ static struct {
     { "guid", 5 },
     { "link", 5 },
     { "image", 6 },
-    { "pubDate", 8 }
+    { "pubDate", 8 },
+    { "channel", 8 },
+    { "feed", 5 }
 };
 
 typedef enum {
@@ -312,11 +321,14 @@ typedef enum {
     PodcastFeedParserKeyGuid,
     PodcastFeedParserKeyLink,
     PodcastFeedParserKeyImage,
-    PodcastFeedParserKeyPubDate
+    PodcastFeedParserKeyPubDate,
+    PodcastFeedParserKeyChannel,
+    PodcastFeedParserKeyFeed
 } PodcastFeedParserKey;
 
 #define PODPARSE_STRNCMP(a,b,l) !strncmp((const char *)a, b, l)
-#define PODPARSE_IS_EPISODE prefix == NULL && isXMLChar(localname, PodcastFeedParserKeyItem)
+#define PODPARSE_IS_ENTRY prefix == NULL && isXMLChar(localname, PodcastFeedParserKeyItem)
+#define PODPARSE_IS_FEED prefix == NULL && isXMLChar(localname, PodcastFeedParserKeyChannel) || isXMLChar(localname, PodcastFeedParserKeyFeed)
 #define PODPARSE_PODCAST_PARSER(ctx) (__bridge MNFeedParser *)ctx
 
 static int
@@ -365,16 +377,14 @@ appendage (const xmlChar *localname, const xmlChar *prefix) {
 }
 
 static void
-updateEpisode(const xmlChar *localname,
-              const xmlChar *prefix,
-              MNFeedParser *parser) {
+updateEpisode (const xmlChar *localname,
+               const xmlChar *prefix,
+               MNFeedParser *parser) {
     
     MNFeedEntry *episode = parser.episode;
     
     if (prefix == NULL) {
-        if (PODPARSE_IS_EPISODE) {
-            [parser delegateEpisode];
-        } else if (isXMLChar(localname, PodcastFeedParserKeyTitle)) {
+        if (isXMLChar(localname, PodcastFeedParserKeyTitle)) {
             episode.title = [parser currentString];
         } else if (isXMLChar(localname, PodcastFeedParserKeyGuid)) {
             episode.guid = [parser currentString];
@@ -393,9 +403,9 @@ updateEpisode(const xmlChar *localname,
 }
 
 static void
-updateFeed(const xmlChar *localname,
-           const xmlChar *prefix,
-           MNFeedParser *parser) {
+updateFeed (const xmlChar *localname,
+            const xmlChar *prefix,
+            MNFeedParser *parser) {
     
     MNFeed *feed = parser.feed;
     
@@ -410,24 +420,14 @@ updateFeed(const xmlChar *localname,
     } else if (isXMLChar(localname, PodcastFeedParserKeySummary)) {
         feed.summary = [parser currentString];
     }
-    if (feed
-        && feed.title
-        && feed.link
-        && feed.subtitle
-        && feed.author
-        && feed.summary
-        && feed.image) {
-        
-        [parser delegateShow];
-    }
 }
 
 static void
-episodeAttributes(const xmlChar *localname,
-                  const xmlChar *prefix,
-                  int nb_attributes,
-                  const xmlChar **attributes,
-                  MNFeedParser *parser) {
+episodeAttributes (const xmlChar *localname,
+                   const xmlChar *prefix,
+                   int nb_attributes,
+                   const xmlChar **attributes,
+                   MNFeedParser *parser) {
     
     int prefixed = prefix == NULL;
     
@@ -446,11 +446,11 @@ episodeAttributes(const xmlChar *localname,
 }
 
 static void
-feedAttributes(const xmlChar *localname,
-               const xmlChar *prefix,
-               int nb_attributes,
-               const xmlChar **attributes,
-               MNFeedParser *parser) {
+feedAttributes (const xmlChar *localname,
+                const xmlChar *prefix,
+                int nb_attributes,
+                const xmlChar **attributes,
+                MNFeedParser *parser) {
     
     int prefixed = prefix == NULL;
     
@@ -471,19 +471,19 @@ feedAttributes(const xmlChar *localname,
 #pragma mark - SAX callbacks
 
 static void
-startElementSAX(void *ctx,
-                const xmlChar *localname,
-                const xmlChar *prefix,
-                const xmlChar *URI,
-                int nb_namespaces,
-                const xmlChar **namespaces,
-                int nb_attributes,
-                int nb_defaulted,
-                const xmlChar **attributes) {
+startElementSAX (void *ctx,
+                 const xmlChar *localname,
+                 const xmlChar *prefix,
+                 const xmlChar *URI,
+                 int nb_namespaces,
+                 const xmlChar **namespaces,
+                 int nb_attributes,
+                 int nb_defaulted,
+                 const xmlChar **attributes) {
     
     MNFeedParser *parser = PODPARSE_PODCAST_PARSER(ctx);
-
-    if (PODPARSE_IS_EPISODE) {
+    
+    if (PODPARSE_IS_ENTRY) {
         parser.episode = [MNFeedEntry new];
         parser.parsingEpisode = YES;
     }
@@ -500,37 +500,44 @@ startElementSAX(void *ctx,
 }
 
 static void
-endElementSAX(void *ctx,
-              const xmlChar *localname,
-              const xmlChar *prefix,
-              const xmlChar *URI) {
+endElementSAX (void *ctx,
+               const xmlChar *localname,
+               const xmlChar *prefix,
+               const xmlChar *URI) {
     
     MNFeedParser *parser = PODPARSE_PODCAST_PARSER(ctx);
     
     if (parser.parsingEpisode) {
         updateEpisode(localname, prefix, parser);
-    } else if (!parser.feedHandled) {
+    } else {
         updateFeed(localname, prefix, parser);
     }
+    
+    if (PODPARSE_IS_ENTRY) {
+        [parser delegateEpisode];
+    } else if (PODPARSE_IS_FEED) {
+        [parser delegateShow];
+    }
+    
     parser.bufferingChars = NO;
 }
 
-static void	charactersFoundSAX(void *ctx, const xmlChar *ch, int len) {
+static void	charactersFoundSAX (void *ctx, const xmlChar *ch, int len) {
     MNFeedParser *parser = PODPARSE_PODCAST_PARSER(ctx);
     if (parser.bufferingChars) {
-       [parser appendCharacters:(const char *)ch length:len];
+        [parser appendCharacters:(const char *)ch length:len];
     }
 }
 
-static void errorEncounteredSAX(void *ctx, const char *msg, ...) {
+static void errorEncounteredSAX (void *ctx, const char *msg, ...) {
     [PODPARSE_PODCAST_PARSER(ctx) delegateError:msg];
 }
 
-static void startDocumentSAX(void * ctx) {
+static void startDocumentSAX (void * ctx) {
     [PODPARSE_PODCAST_PARSER(ctx) delegateDocumentStart];
 }
 
-static void endDocumentSAX(void * ctx) {
+static void endDocumentSAX (void * ctx) {
     [PODPARSE_PODCAST_PARSER(ctx) delegateDocumentEnd];
 }
 

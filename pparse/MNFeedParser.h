@@ -12,12 +12,13 @@
 
 @interface MNFeed : NSObject
 
-@property (nonatomic) NSString *title;
+@property (copy) NSString *title;
 @property (nonatomic) NSString *link;
 @property (nonatomic) NSString *subtitle;
 @property (nonatomic) NSString *author;
 @property (nonatomic) NSString *summary;
 @property (nonatomic) NSString *image;
+@property (nonatomic) NSString *updated;
 
 @end
 
@@ -79,7 +80,9 @@
 - (id)initWith:(id <MNFeedParserDelegate>)delegate
  dateFormatter:(NSDateFormatter *)dateFormatter;
 
+- (void)parseStream:(NSInputStream *)stream withMaxLength:(NSInteger)maxLength;
+
 + (MNFeedParser *)parserWith:(id <MNFeedParserDelegate>)delegate
-                dateFormatter:(NSDateFormatter *)dateFormatter;
+               dateFormatter:(NSDateFormatter *)dateFormatter;
 
 @end
