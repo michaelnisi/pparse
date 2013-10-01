@@ -155,13 +155,12 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
     return self;
 }
 
-
 - (void)setStoringCharacters:(BOOL)value {
     if (!value) [_characterBuffer setLength:0];
     _bufferingChars = value;
 }
 
-# pragma mark - MNFeedParse (API)
+# pragma mark - MNFeedParser (API)
 
 + (MNFeedParser *)parserWith:(id<MNFeedParserDelegate>)delegate
                dateFormatter:(NSDateFormatter *)dateFormatter {
@@ -203,7 +202,7 @@ typedef struct _xmlSAX2Attributes xmlSAX2Attributes;
     while((result = [stream read:buffer maxLength:maxLength]) > 0) {
         [self parse:[NSData dataWithBytesNoCopy:buffer
                                          length:result
-                                   freeWhenDone:NO]];
+                                   freeWhenDone:YES]];
     }
     [stream close];
     [self parse:nil];

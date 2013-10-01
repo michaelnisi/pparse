@@ -203,8 +203,6 @@
     }];
     
     XCTAssertTrue(delegate.started, @"should be started");
-    XCTAssertFalse(delegate.ended, @"should not be ended");
-    [parser parse:nil];
     XCTAssertTrue(delegate.ended, @"should be ended");
     XCTAssertNil(delegate.parseError, @"should not error");
     

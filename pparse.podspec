@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = 'pparse'
-  s.version = '0.0.1'
-  s.summary = 'Parse podcasts.'
+  s.version = '0.0.2'
+  s.summary = 'parse feeds'
   s.homepage = 'https://github.com/michaelnisi/pparse'
   s.license = 'MIT'
   s.author = { 'Michael Nisi' => 'michael.nisi@gmail.com' }
-  s.source = { :git => 'https://github.com/michaelnisi/pparse.git', :tag => '0.0.1' }
+  s.source = { :git => 'https://github.com/michaelnisi/pparse.git', :tag => '0.0.2' }
   s.platform = :ios, '7.0'
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
@@ -15,6 +15,4 @@ Pod::Spec.new do |s|
   
   s.library = 'xml2'
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
-
-  s.dependency 'yajl'
 end

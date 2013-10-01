@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A4AC2DB256E46829A82CA52 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE212C715BA8461993C0CF1D /* libPods.a */; };
 		4C95BC6C17FA9A4F0094A756 /* mix.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4C95BC6B17FA9A4F0094A756 /* mix.xml */; };
 		4C95BC6E17FA9ABE0094A756 /* AtomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95BC6D17FA9ABE0094A756 /* AtomTests.m */; };
 		4C95BC7117FA9B500094A756 /* AFeedReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95BC7017FA9B500094A756 /* AFeedReader.m */; };
@@ -70,7 +69,6 @@
 		4CFCC06117A02B73004EF689 /* MNFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNFeedParser.m; sourceTree = "<group>"; };
 		4CFCC06217A02B73004EF689 /* MNFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNFeedParser.h; sourceTree = "<group>"; };
 		4CFCC06417A02C54004EF689 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
-		5FDFD2F1F46846208A1822BA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EE212C715BA8461993C0CF1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,7 +79,6 @@
 			files = (
 				4CFCC06517A02C54004EF689 /* libxml2.2.dylib in Frameworks */,
 				4CFCC02C17A01AF1004EF689 /* Foundation.framework in Frameworks */,
-				3A4AC2DB256E46829A82CA52 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +104,6 @@
 				4CFCC04117A01AF1004EF689 /* pparseTests */,
 				4CFCC02A17A01AF1004EF689 /* Frameworks */,
 				4CFCC02917A01AF1004EF689 /* Products */,
-				5FDFD2F1F46846208A1822BA /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,11 +179,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CFCC04B17A01AF1004EF689 /* Build configuration list for PBXNativeTarget "pparse" */;
 			buildPhases = (
-				D292804B530D4444800B68F4 /* Check Pods Manifest.lock */,
 				4CFCC02417A01AF1004EF689 /* Sources */,
 				4CFCC02517A01AF1004EF689 /* Frameworks */,
 				4CFCC02617A01AF1004EF689 /* CopyFiles */,
-				7BB51B868F4C49F58F216C0C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,39 +251,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7BB51B868F4C49F58F216C0C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D292804B530D4444800B68F4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CFCC02417A01AF1004EF689 /* Sources */ = {
@@ -401,7 +362,6 @@
 		};
 		4CFCC04C17A01AF1004EF689 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FDFD2F1F46846208A1822BA /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/pparse.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -420,7 +380,6 @@
 		};
 		4CFCC04D17A01AF1004EF689 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FDFD2F1F46846208A1822BA /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/pparse.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
